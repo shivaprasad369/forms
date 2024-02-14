@@ -2,7 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { DataGrid } from '@mui/x-data-grid';
 import axios from 'axios';
+import firebase from './firebaseConfig';
+// import { ref,onValue } from 'firebase/database';
 
+//  const db=firebaseConfig()
 const columns = [
   { field: 'id', headerName: 'ID', width: 90 },
   {
@@ -85,22 +88,31 @@ export default function Admin() {
           const res= await axios.get('https://form-87465-default-rtdb.firebaseio.com/form.json')
           if(!res.ok){
           console.log("not");
-         
+          // firebase.database().ref('form').on('value',snapshot=>{
+          //   let forms=[];
+          //   snapshot.forEach((child)=>{
+          //     forms.push(child.val())
+          //   });
+            
+          
+          }
+          console.log(res)
+setData(res.data)
           }
          
-            console.log(res.data['-NqbU89RsCnLMZRj7FF3'])
- setData(res.data)
-           }
+        
     React.useEffect(()=>{
         fetchData()
     },[])
-    console.log(data)
+    
+
+    console.log(data[data.name])
   return (
     <>
     <Box sx={{ height: 400, width: '100%' }}>
-        {data.map((data)=>{  
+        
       <DataGrid
-        rows={data}
+        rows={rows}
         columns={columns}
         initialState={{
           pagination: {
@@ -113,7 +125,7 @@ export default function Admin() {
         checkboxSelection
         disableRowSelectionOnClick
       />
-    })}
+  
     </Box>
     {/* {data.map((data)=>{
         <h1>{data}</h1>
