@@ -1,46 +1,27 @@
 import { Typography } from '@mui/material';
-import React, { useRef } from 'react'
+import axios from 'axios';
+import React, { useRef, useState } from 'react'
 
-export default function Basic({setData,data,setErrors,errors,progress,setProgress}) {
+export default function Basic({errors}) {
+   const [datas,setDatas]=useState({
+    Name:'',
+   Phone:'',
+    Email:'',
+    Interst:'',
+    Course:'',
+  
+   })
     const name= useRef();
     const number= useRef();
     const email= useRef();
     const interest= useRef();
-    const campus= useRef();
+
     const course=useRef()
     const handleSubmit=(event)=>{
         event.preventDefault();
-        console.log(number.current.value.length)
-        if(name.current.value.length<3){
-        setErrors({...errors,name:"Name must be at least 3 characters long"})
-        }
-       
-        if(!email.current.value.includes("@")){
-           setErrors({...errors,email:"Email must include @"})
-        return
+       axios.post('https://formpanel.onrender.com/api/v1/post',datas).then((data)=>alert('Thank you so much')).catch((error)=>alert(error))
        }
-       
-       if(number.current.value.length!==10){
-           setErrors({...errors,number:"Number must be 10 digits long"})
-           return
-       }
-       
-       if(!interest.current.value){
-           setErrors({...errors,interest:"Please select your interest"})
-           return
-       }
-       if(!course.current.value){
-        setErrors({...errors,course:"Please select your course"})
-        return
-    }
-       if(!campus.current.value){
-           setErrors({...errors,campus:"Please select your campus"})
-           return
-       }
-       setErrors("")
-        console.log(data, errors)
-        setProgress({...progress,basic:true})
-       }
+
   return (
     <div>
       <div className="flex flex-col gap-4 text-left justify-start p-3 mt-[1rem] flex-wrap">
@@ -56,14 +37,14 @@ export default function Basic({setData,data,setErrors,errors,progress,setProgres
         ref={name}
           type="text"
           placeholder="Enter your name"
-          className="w-[80%] max-[566px]:w-[20rem] max-[348px]:w-[15rem] h-[2.4rem] border-black border-2"
+          className="w-[80%] max-[566px]:w-[20rem] outline-none px-3 max-[348px]:w-[15rem] h-[2.4rem] border-black border-2"
           required
-          onChange={(e)=>setData({...data,name:e.target.value})}
+          onChange={(e)=>setDatas({...datas,Name:e.target.value})}
         />
         <p>{errors.name}</p>
         <Typography className="pt-4">You mobile number</Typography>
         <div className="border-2 w-fit h-fit max-[348px]:w-[15rem]    border-black">
-          <select className="pt-4 h-[100%] border-r-2 border-black  py-2 ">
+          <select className="pt-4 h-[100%] outline-none border-r-2 border-black  py-2 ">
             <option value="+91">+91</option>
             <option value="+92">+92</option>
             <option value="+93">+93</option>
@@ -72,9 +53,9 @@ export default function Basic({setData,data,setErrors,errors,progress,setProgres
           ref={number}
             type="number"
             placeholder="Enter your number"
-            className="p-2 w-[16.6rem] max-[348px]:w-[11.7rem] h-[3.2rem]"
+            className="p-2 w-[16.6rem] outline-none max-[348px]:w-[11.7rem] h-[3.2rem]"
             required
-            onChange={(e)=>setData({...data,number:e.target.value})}
+            onChange={(e)=>setDatas({...datas,Phone:e.target.value})}
           />
         </div>
           <p>{errors.number}</p>
@@ -87,26 +68,39 @@ export default function Basic({setData,data,setErrors,errors,progress,setProgres
         ref={email}
           type="email"
           placeholder="Enter your email"
-          className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem] p-2 h-[2.4rem] border-black border-2"
-          onChange={(e)=>setData({...data,email:e.target.value})}
+          className="w-[80%] max-[348px]:w-[15rem] outline-none max-[566px]:w-[20rem] p-2 h-[2.4rem] border-black border-2"
+          onChange={(e)=>setDatas({...datas,Email:e.target.value})}
           required
         />
-  <div>
+  <div className=' mt-[1rem]'>
             <Typography>Choose Courses</Typography>
-            <select className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] border-black border-2" ref={course} onChange={(e)=>setData({...data,course:e.target.value})}>
+            <select className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] border-black border-2" ref={course} onChange={(e)=>setDatas({...datas,Course:e.target.value})}>
               <option value="" selected="" disabled="">
                 Select courses
               </option>
-              <option value={"Bangalore"}>Java Full stack</option>
-              <option value="pune">Frontend developer</option>
-              <option value={"hubli"}>PHP</option>
+              <option value={"Java Full Stack"}>Java Full stack</option>
+              <option value="Front End development">Frontend development</option>
+              <option value={"PHP"}>PHP</option>
+              <option value={"Laravel"}>Laravel</option>
+
+              <option value={"Android"}>Android</option>
+
+              <option value={"tally"}>Tally</option>
+              <option value={"Mern"}>Mern Stack</option>
+              <option value={"UI/UX"}>UI/UX designing</option>
+              <option value={"HR"}>HR</option>
+              <option value={"Digital marketing"}>Digital Marketing</option>
+              <option value={"Backend"}>Backend development</option>
+              <option value={"basic computer"}>Basic computer</option>
+
+
             </select>
             <p>{errors.course}</p>
           </div>
-        <div className="md:flex max-[996px]:flex-col gap-4 pt-4">
-          <div>
+      
+          <div className=' mt-[1rem]'>
             <Typography>I'm interested in</Typography>
-            <select  className="w-[20rem] max-[348px]:w-[15rem] p-2 h-[2.4rem] border-black border-2" ref={interest} onChange={(e)=>setData({...data,interest:e.target.value})}>
+            <select  className="w-[80%] outline-none max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] border-black border-2" ref={interest} onChange={(e)=>setDatas({...datas,Interst:e.target.value})}>
               <option value="" selected="" disabled="">
                 I'm interested in
               </option>
@@ -119,19 +113,8 @@ export default function Basic({setData,data,setErrors,errors,progress,setProgres
             </select>
             <p>{errors.interest}</p>
           </div>
-          <div>
-            <Typography>Preferred Campus</Typography>
-            <select className="w-[20rem] max-[348px]:w-[15rem] p-2 h-[2.4rem] border-black border-2" ref={campus} onChange={(e)=>setData({...data,campus:e.target.value})}>
-              <option value="" selected="" disabled="">
-                Select campus
-              </option>
-              <option value={"Bangalore"}>Bangalore</option>
-              <option value="pune">Pune</option>
-              <option value={"hubli"}>Hubli</option>
-            </select>
-            <p>{errors.campus}</p>
-          </div>
-        </div>
+          
+
        
         <div className="border-b-2 pt-[3rem]" />
         <p className="py-3">

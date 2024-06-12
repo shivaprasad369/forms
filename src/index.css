@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.box{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+   
+    
+}
+.head h1{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.header{
+    font-size: 1rem;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    list-style: none;
+} 
