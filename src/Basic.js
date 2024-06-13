@@ -25,7 +25,7 @@ export default function Basic({errors}) {
   return (
     <div>
       <div className="flex flex-col gap-4 text-left justify-start p-3 mt-[1rem] flex-wrap">
-        <h1 className="text-3xl text-blue-500 font-bold">Basic Information</h1>
+        <h1 className="text-3xl text-[#ac337e] font-bold">Basic Information</h1>
         <p className="text-gray-500 flex-wrap ">
           We value your privacy. We’ll never share your information with anyone
           else.
@@ -37,14 +37,14 @@ export default function Basic({errors}) {
         ref={name}
           type="text"
           placeholder="Enter your name"
-          className="w-[80%] max-[566px]:w-[20rem] outline-none px-3 max-[348px]:w-[15rem] h-[2.4rem] border-black border-2"
+          className="w-[80%] max-[566px]:w-[20rem] outline-none bg-slate-100 px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
           required
           onChange={(e)=>setDatas({...datas,Name:e.target.value})}
         />
         <p>{errors.name}</p>
         <Typography className="pt-4">You mobile number</Typography>
-        <div className="border-2 w-fit h-fit max-[348px]:w-[15rem]    border-black">
-          <select className="pt-4 h-[100%] outline-none border-r-2 border-black  py-2 ">
+        <div className="border-0 w-fit h-fit max-[348px]:w-[15rem]  rounded-md border-gray-300">
+          <select className="pt-4 h-[100%] bg-slate-100  outline-none   py-2 " required>
             <option value="+91">+91</option>
             <option value="+92">+92</option>
             <option value="+93">+93</option>
@@ -53,7 +53,7 @@ export default function Basic({errors}) {
           ref={number}
             type="number"
             placeholder="Enter your number"
-            className="p-2 w-[16.6rem] outline-none max-[348px]:w-[11.7rem] h-[3.2rem]"
+            className="p-2 md:w-[16.6rem] border-l-2 rounded-md bg-slate-100 border-gray-300 outline-none max-md:w-[11.7rem] h-[3.2rem]"
             required
             onChange={(e)=>setDatas({...datas,Phone:e.target.value})}
           />
@@ -68,13 +68,13 @@ export default function Basic({errors}) {
         ref={email}
           type="email"
           placeholder="Enter your email"
-          className="w-[80%] max-[348px]:w-[15rem] outline-none max-[566px]:w-[20rem] p-2 h-[2.4rem] border-black border-2"
+          className="w-[80%] max-[348px]:w-[15rem] bg-slate-100 outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
           onChange={(e)=>setDatas({...datas,Email:e.target.value})}
           required
         />
-  <div className=' mt-[1rem]'>
+  <div className=' mt-[1rem] hidden'>
             <Typography>Choose Courses</Typography>
-            <select className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] border-black border-2" ref={course} onChange={(e)=>setDatas({...datas,Course:e.target.value})}>
+            <select className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] rounded-md border-gray-300 border-2" ref={course} onChange={(e)=>setDatas({...datas,Course:e.target.value})}> required
               <option value="" selected="" disabled="">
                 Select courses
               </option>
@@ -98,9 +98,9 @@ export default function Basic({errors}) {
             <p>{errors.course}</p>
           </div>
       
-          <div className=' mt-[1rem]'>
+          <div className=' mt-[1rem] hidden'>
             <Typography>I'm interested in</Typography>
-            <select  className="w-[80%] outline-none max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] border-black border-2" ref={interest} onChange={(e)=>setDatas({...datas,Interst:e.target.value})}>
+            <select  className="w-[80%]  outline-none max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] rounded-md border-gray-300 border-2" ref={interest} onChange={(e)=>setDatas({...datas,Interst:e.target.value})} required>
               <option value="" selected="" disabled="">
                 I'm interested in
               </option>
@@ -121,9 +121,13 @@ export default function Basic({errors}) {
           By submitting the form, you agree to our Terms and Conditions and our
           Privacy Policy.{" "}
         </p>
-        <div className="md:ml-[85%]">
+        <div className='flex justify-between'>
+
+        <button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
+        <div className="">
          
-          <button className='border-2 bg-blue-400 px-5 py-2 text-white font-bold'>Next</button>
+          <button className='border-0 bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold'>Next</button>
+        </div>
         </div>
       </form>
     </div>

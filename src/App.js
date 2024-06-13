@@ -8,11 +8,13 @@ import Footer from './Footer';
 import Tearm from './Tearm';
 import Privacy from './Privacy';
 import Refund from './Refund';
+import Header from './Header';
 
 function App() {
   return (
     <>
     <BrowserRouter>
+    <Header/>>
     <Routes>
       <Route path="/" element={<Form/>}/>
       <Route path="/admin" element={<Admin/>}/>

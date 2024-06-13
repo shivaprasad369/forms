@@ -34,13 +34,17 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
     const [data,setData]=React.useState()
     
-         
-      React.useEffect(()=>{
+         const fetchData=async()=>{
 
-        axios.get('https://formpanel.onrender.com/api/v1/post').then((data)=> setData(data.data.data)).catch((error)=>console.log(error))
-      },[]);
+           await axios.get('https://formpanel.onrender.com/api/v1/post').then((data)=> setData(data.data.data)).catch((error)=>console.log(error))
+       console.log(data)
+          }
+      React.useEffect(()=>{
+fetchData();
+// eslint-disable-next-line
+      },[data]);
           
-              
+              console.log(data)
            return (
             <>
          
@@ -53,8 +57,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
             <StyledTableCell>Name</StyledTableCell>
             <StyledTableCell align="right">Email</StyledTableCell>
             <StyledTableCell align="right">Phone</StyledTableCell>
-            <StyledTableCell align="right">Course</StyledTableCell>
-            <StyledTableCell align="right">Interest</StyledTableCell>
+         
            
             <StyledTableCell align="right">Call</StyledTableCell>
 
@@ -69,9 +72,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
               </StyledTableCell>
               <StyledTableCell align="right">{row.Email}</StyledTableCell>
               <StyledTableCell align="right">{row.Phone}</StyledTableCell>
-              <StyledTableCell align="right">{row.Course}</StyledTableCell>
-              <StyledTableCell align="right">{row.Interst}</StyledTableCell>
-             
+            
               <StyledTableCell align="right"><a href={`tel:${row.Phone}`} className='text-white font-bold bg-blue-500 px-3 py-2'>CallNow</a> </StyledTableCell>
             
               <StyledTableCell align="right"><a href={`https://wa.me/${row.Phone}`} className='text-white font-bold bg-green-500 px-3 py-2'>WhatsApp</a></StyledTableCell></StyledTableRow>

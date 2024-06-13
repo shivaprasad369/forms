@@ -18,7 +18,7 @@ export default function Form() {
     
   return (
     <div className="flex max-md:flex-col justify-center gap-6 overflow-x-hidden">
-    <div className={`flex flex-col flex-wrap gap-2 border-2 m-2  max-md:mr-2  `}>
+    <div className={`flex flex-col flex-wrap gap-2 border-[1px] rounded-md m-2  max-md:mr-2  `}>
   
    <Basic  errors={errors} />
     
