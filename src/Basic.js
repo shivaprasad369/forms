@@ -24,52 +24,59 @@ export default function Basic({errors}) {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 text-left justify-start p-3 mt-[1rem] flex-wrap">
-        <h1 className="text-3xl text-[#ac337e] font-bold">Basic Information</h1>
-        <p className="text-gray-500 flex-wrap ">
-          We value your privacy. We’ll never share your information with anyone
-          else.
-        </p>
+      
+      <div className='md:flex w-[100%] gap-5 max-md:flex-col justify-center items-center mb-[3rem]'> 
+
+
+      <form className=" gap-3 md:w-[50%] xl:w-[30%] pag-y-10 p-3" >
+      <div className="flex flex-col gap-4 text-left justify-start p-3  flex-wrap">
+        <h1 className="text-3xl font-bold">Basic Information</h1>
+       
       </div>
-      <form className=" gap-3 pag-y-10 p-3" onSubmit={handleSubmit}>
         <Typography>Your Name</Typography>
         <input
         ref={name}
           type="text"
           placeholder="Enter your name"
-          className="w-[80%] max-[566px]:w-[20rem] outline-none bg-slate-100 px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
+          className="w-[80%] xl:w-[100%] max-[566px]:w-[20rem] outline-none shadow-md px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
           required
           onChange={(e)=>setDatas({...datas,Name:e.target.value})}
         />
         <p>{errors.name}</p>
         <Typography className="pt-4">You mobile number</Typography>
-        <div className="border-0 w-fit h-fit max-[348px]:w-[15rem]  rounded-md border-gray-300">
-          <select className="pt-4 h-[100%] bg-slate-100  outline-none   py-2 " required>
-            <option value="+91">+91</option>
-            <option value="+92">+92</option>
-            <option value="+93">+93</option>
-          </select>
+        <div>
+         
           <input
           ref={number}
             type="number"
             placeholder="Enter your number"
-            className="p-2 md:w-[16.6rem] border-l-2 rounded-md bg-slate-100 border-gray-300 outline-none max-md:w-[11.7rem] h-[3.2rem]"
+           className="w-[80%] xl:w-[100%] max-[566px]:w-[20rem] outline-none shadow-md px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
             required
             onChange={(e)=>setDatas({...datas,Phone:e.target.value})}
           />
         </div>
-          <p>{errors.number}</p>
-        <p className="text-gray-500">
-          We'll call you on this number to take your application forward.
-        </p>
+          
+       
 
         <Typography className="pt-4">Your Email</Typography>
         <input
         ref={email}
           type="email"
           placeholder="Enter your email"
-          className="w-[80%] max-[348px]:w-[15rem] bg-slate-100 outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
+          className="xl:w-[100%] w-[80%] max-[348px]:w-[15rem]  shadow-md outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
           onChange={(e)=>setDatas({...datas,Email:e.target.value})}
+          required
+        />
+        
+        
+
+        <Typography className="pt-4">Place</Typography>
+        <input
+
+          type="text"
+          placeholder="Enter your place"
+          className="xl:w-[100%] w-[80%] max-[348px]:w-[15rem]  shadow-md outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
+          onChange={(e)=>setDatas({...datas,Interst:e.target.value})}
           required
         />
   <div className=' mt-[1rem] hidden'>
@@ -116,20 +123,48 @@ export default function Basic({errors}) {
           
 
        
-        <div className="border-b-2 pt-[3rem]" />
+        {/* <div className="border-b-2 pt-[3rem]" />
         <p className="py-3">
           By submitting the form, you agree to our Terms and Conditions and our
           Privacy Policy.{" "}
-        </p>
-        <div className='flex justify-between'>
+        </p> */}
+        {/* <div className='flex justify-between'>
 
         <button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
         <div className="">
          
           <button className='border-0 bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold'>Next</button>
         </div>
-        </div>
+        </div> */}
       </form>
+      <div className='px-4 md:w-[50%] xl:w-[40%] shadow-md py-[1rem]  max-md:mt-[2rem]' >
+        <div className='flex flex-col gap-3 capitalize text-lg'>
+          <h3 className='font-bold tracking-wider text-xl'>master the art of resume building and linkedin job application</h3>
+          <p className='text-md mt-[1rem] tracking-wider font-semibold md:w-[90%]'>the only workshop that teachesthe 5-step framework to optimize resume and leverage linkedin for job Success <br/>
+          transform your job search strategy</p>
+          <div className='flex flex-col gap-3 font-semibold'>
+            <div>Date : Sunday | 30th june 2024</div>
+            <div>
+              Time : 11:00 AM
+            </div>
+            <div>
+              Contact us : careers@learnersitacademy.com
+            </div>
+            <div>
+              <span className='font-bold text-[#a72e70]'>Amount 399.</span>
+            </div>
+          </div>
+          <div className='flex justify-between'>
+
+<button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
+<div className="">
+ 
+  <button type='button' onClick={handleSubmit} className='border-0 bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold'>PAY NOW</button>
+</div>
+</div>
+        </div>
+      </div>
+      </div>
     </div>
   )
 }

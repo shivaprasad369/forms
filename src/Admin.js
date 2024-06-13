@@ -57,6 +57,7 @@ fetchData();
             <StyledTableCell>Name</StyledTableCell>
             <StyledTableCell align="right">Email</StyledTableCell>
             <StyledTableCell align="right">Phone</StyledTableCell>
+            <StyledTableCell align="right">place</StyledTableCell>
          
            
             <StyledTableCell align="right">Call</StyledTableCell>
@@ -72,6 +73,7 @@ fetchData();
               </StyledTableCell>
               <StyledTableCell align="right">{row.Email}</StyledTableCell>
               <StyledTableCell align="right">{row.Phone}</StyledTableCell>
+              <StyledTableCell align="right">{row.Interst}</StyledTableCell>
             
               <StyledTableCell align="right"><a href={`tel:${row.Phone}`} className='text-white font-bold bg-blue-500 px-3 py-2'>CallNow</a> </StyledTableCell>
             
