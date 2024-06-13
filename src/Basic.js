@@ -3,6 +3,7 @@ import axios from 'axios';
 import React, { useRef, useState } from 'react'
 
 export default function Basic({errors}) {
+ const [load,setLoad]= useState(false)
    const [datas,setDatas]=useState({
     Name:'',
    Phone:'',
@@ -18,9 +19,11 @@ export default function Basic({errors}) {
 
     const course=useRef()
     const handleSubmit=(event)=>{
+      setLoad(true)
         event.preventDefault();
        axios.post('https://formpanel.onrender.com/api/v1/post',datas).then((data)=>alert('Thank you so much')).catch((error)=>alert(error))
-       }
+      setLoad(false)
+      }
 
   return (
     <div>
@@ -159,7 +162,7 @@ export default function Basic({errors}) {
 <button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
 <div className="">
  
-  <button type='button' onClick={handleSubmit} className='border-0 bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold'>PAY NOW</button>
+  <button type='button' onClick={handleSubmit} className={`border-0 ${load && 'cursor-wait opacity-[0.5]'} bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold`}>PAY NOW</button>
 </div>
 </div>
         </div>
