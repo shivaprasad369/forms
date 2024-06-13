@@ -92,7 +92,7 @@ export default function Refund() {
                     We reserve the right to update or change our refund policy at any time. Any changes will be posted on this page, and the last updated date will be revised accordingly. We encourage you to review this policy periodically to stay informed of any updates.
                 </div>
                 <div>
-                    If you have any questions or concerns about our refund policy, please contact us at<b> support@learnersitacademy.com.</b>
+                    If you have any questions or concerns about our refund policy, please contact us at<a href="mailto:support@learnersitacademy.com"><b> support@learnersitacademy.com.</b></a>
                 </div>
             </li>
 

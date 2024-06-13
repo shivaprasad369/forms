@@ -98,7 +98,7 @@ export default function Tearm() {
                     <h1>7. Refund Policy</h1>
                 </div>
                 <div>
-                    <h4>7.1. Refunds will be provided based on our Refund Policy, which can be found [insert link to Refund Policy].</h4>
+                    <h4>7.1. Refunds will be provided based on our Refund Policy, which can be found <a href='/refund'><b>Refund Policy</b></a>.</h4>
                    
                 </div>
             </li>
