@@ -7,6 +7,11 @@
    
     
 }
+body {
+    background-image: url('./smartpay_bg.4d427c38.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .head h1{
     font-weight: 700;
     font-size: 1rem;

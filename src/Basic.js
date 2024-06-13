@@ -18,20 +18,20 @@ export default function Basic({errors}) {
     const interest= useRef();
 
     const course=useRef()
-    const handleSubmit=(event)=>{
-      setLoad(true)
-        event.preventDefault();
+    const handleSubmit=()=>{
+      setLoad(()=>true)
+    
        axios.post('https://formpanel.onrender.com/api/v1/post',datas).then((data)=>alert('Thank you so much')).catch((error)=>alert(error))
-      setLoad(false)
+      setLoad(()=>false)
       }
 
   return (
     <div>
       
-      <div className='md:flex w-[100%] gap-5 max-md:flex-col justify-center items-center mb-[3rem]'> 
+      <div className='md:flex w-[100%] gap-5  max-md:flex-col justify-center items-center mb-[3rem]'> 
 
-
-      <form className=" gap-3 md:w-[50%] xl:w-[30%] pag-y-10 p-3" >
+        
+      <form className=" gap-3 md:w-[50%] shadow-lg xl:w-[30%] pag-y-10 p-3" >
       <div className="flex flex-col gap-4 text-left justify-start p-3  flex-wrap">
         <h1 className="text-3xl font-bold">Basic Information</h1>
        
@@ -140,7 +140,7 @@ export default function Basic({errors}) {
         </div>
         </div> */}
       </form>
-      <div className='px-4 md:w-[50%] xl:w-[40%] shadow-md py-[1rem]  max-md:mt-[2rem]' >
+      <div className='px-4 md:w-[50%] xl:w-[40%]  shadow-lg py-[1rem]   max-md:mt-[2rem]' >
         <div className='flex flex-col gap-3 capitalize text-lg'>
           <h3 className='font-bold tracking-wider text-xl'>master the art of resume building and linkedin job application</h3>
           <p className='text-md mt-[1rem] tracking-wider font-semibold md:w-[90%]'>the only workshop that teachesthe 5-step framework to optimize resume and leverage linkedin for job Success <br/>
@@ -162,7 +162,7 @@ export default function Basic({errors}) {
 <button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
 <div className="">
  
-  <button type='button' onClick={handleSubmit} className={`border-0 ${load && 'cursor-wait opacity-[0.5]'} bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold`}>PAY NOW</button>
+  <button type='button' onClick={handleSubmit} className={`border-0 ${load && 'cursor-wait opacity-[0.5]'} bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold`}>{load ? 'Loading..':'PAY NOW'}</button>
 </div>
 </div>
         </div>
