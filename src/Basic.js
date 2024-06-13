@@ -15,23 +15,30 @@ export default function Basic({errors}) {
     const name= useRef();
     const number= useRef();
     const email= useRef();
-    const interest= useRef();
 
-    const course=useRef()
-    const handleSubmit=()=>{
-      setLoad(()=>true)
-    
-       axios.post('https://formpanel.onrender.com/api/v1/post',datas).then((data)=>alert('Thank you so much')).catch((error)=>alert(error))
-      setLoad(()=>false)
-      }
+
+ 
+    const handleSubmit=async(e)=>{
+     e.preventDefault()
+setLoad(true)
+       const res=await axios.post('https://formpanel.onrender.com/api/v1/post',datas)
+       if(res){
+
+         alert("thank you so much")
+         setLoad(false)
+       }
+       setLoad(false)
+      console.log(load)
+      
+    }
 
   return (
     <div>
       
-      <div className='md:flex w-[100%] gap-5  max-md:flex-col justify-center items-center mb-[3rem]'> 
+      <form onSubmit={handleSubmit} className='md:flex w-[100%] gap-5  max-md:flex-col justify-center items-center mb-[3rem]'> 
 
         
-      <form className=" gap-3 md:w-[50%] shadow-lg xl:w-[30%] pag-y-10 p-3" >
+      <div className=" gap-3 md:w-[50%] shadow-lg xl:w-[30%] pag-y-10 p-3" >
       <div className="flex flex-col gap-4 text-left justify-start p-3  flex-wrap">
         <h1 className="text-3xl font-bold">Basic Information</h1>
        
@@ -40,6 +47,7 @@ export default function Basic({errors}) {
         <input
         ref={name}
           type="text"
+          name='name'
           placeholder="Enter your name"
           className="w-[80%] xl:w-[100%] max-[566px]:w-[20rem] outline-none shadow-md px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
           required
@@ -52,6 +60,7 @@ export default function Basic({errors}) {
           <input
           ref={number}
             type="number"
+           name='phone'
             placeholder="Enter your number"
            className="w-[80%] xl:w-[100%] max-[566px]:w-[20rem] outline-none shadow-md px-3  max-[348px]:w-[15rem] h-[3rem] rounded-md border-gray-300 border-0"
             required
@@ -65,6 +74,7 @@ export default function Basic({errors}) {
         <input
         ref={email}
           type="email"
+name='email'
           placeholder="Enter your email"
           className="xl:w-[100%] w-[80%] max-[348px]:w-[15rem]  shadow-md outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
           onChange={(e)=>setDatas({...datas,Email:e.target.value})}
@@ -77,12 +87,13 @@ export default function Basic({errors}) {
         <input
 
           type="text"
+          name='place'
           placeholder="Enter your place"
           className="xl:w-[100%] w-[80%] max-[348px]:w-[15rem]  shadow-md outline-none max-[566px]:w-[20rem] p-2 h-[3rem] rounded-md border-gray-300 border-0"
           onChange={(e)=>setDatas({...datas,Interst:e.target.value})}
           required
         />
-  <div className=' mt-[1rem] hidden'>
+  {/* <div className=' mt-[1rem] hidden'>
             <Typography>Choose Courses</Typography>
             <select className="w-[80%] max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] rounded-md border-gray-300 border-2" ref={course} onChange={(e)=>setDatas({...datas,Course:e.target.value})}> required
               <option value="" selected="" disabled="">
@@ -106,9 +117,9 @@ export default function Basic({errors}) {
 
             </select>
             <p>{errors.course}</p>
-          </div>
+          </div> */}
       
-          <div className=' mt-[1rem] hidden'>
+          {/* <div className=' mt-[1rem] hidden'>
             <Typography>I'm interested in</Typography>
             <select  className="w-[80%]  outline-none max-[348px]:w-[15rem] max-[566px]:w-[20rem]  p-2 h-[2.4rem] rounded-md border-gray-300 border-2" ref={interest} onChange={(e)=>setDatas({...datas,Interst:e.target.value})} required>
               <option value="" selected="" disabled="">
@@ -122,7 +133,7 @@ export default function Basic({errors}) {
               </option>
             </select>
             <p>{errors.interest}</p>
-          </div>
+          </div> */}
           
 
        
@@ -139,7 +150,7 @@ export default function Basic({errors}) {
           <button className='border-0 bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold'>Next</button>
         </div>
         </div> */}
-      </form>
+      </div>
       <div className='px-4 md:w-[50%] xl:w-[40%]  shadow-lg py-[1rem]   max-md:mt-[2rem]' >
         <div className='flex flex-col gap-3 capitalize text-lg'>
           <h3 className='font-bold tracking-wider text-xl'>master the art of resume building and linkedin job application</h3>
@@ -159,15 +170,15 @@ export default function Basic({errors}) {
           </div>
           <div className='flex justify-between'>
 
-<button type='button' className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></button>
+<div className='border-0 bg-gradient-to-r rounded-lg from-[#0c0b0b] to-[#424242] px-5 py-2 text-white font-bold'><a href='https://learnersitacademy.com/'>Back</a></div>
 <div className="">
  
-  <button type='button' onClick={handleSubmit} className={`border-0 ${load && 'cursor-wait opacity-[0.5]'} bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold`}>{load ? 'Loading..':'PAY NOW'}</button>
+  <button name='button' className={`border-0 ${load && 'cursor-wait opacity-[0.5]'} bg-gradient-to-r rounded-lg from-[#c04071] to-[#eb7ea7] px-5 py-2 text-white font-bold`}>{load ? 'Loading..':'PAY NOW'}</button>
 </div>
 </div>
         </div>
       </div>
-      </div>
+      </form>
     </div>
   )
 }
