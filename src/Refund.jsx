@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Refund() {
   return (
-    <div className='md:px-[10%] max-mdLpx-[3%] flex justify-center items-center  flex-col py-[2rem]'>
+    <div className='md:px-[10%] max-md:px-[3%] flex justify-center items-center  flex-col py-[2rem]'>
     <div className="header pb-[2rem]">
         <h1 className='text-3xl font-bold '>REFUND POLICY</h1>
     </div>
