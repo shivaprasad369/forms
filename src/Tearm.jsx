@@ -14,7 +14,7 @@ export default function Tearm() {
                 </div>
                 <div>
                     <h4>1.1.  Learners IT Academy offers online IT-related courses and training programs. These Terms and Conditions govern your use of our website and services.</h4>
-                    
+                    <h4>1.2. Unitechno Software Development Company is a software development IT company leading from past few years Learners IT Academy is associated with Unitechno as Unitechno's Trade Name</h4>
                 </div>
     
             </li>
@@ -99,7 +99,7 @@ export default function Tearm() {
                 </div>
                 <div>
                     <h4>7.1. Refunds will be provided based on our Refund Policy, which can be found <a href='/refund'><b>Refund Policy</b></a>.</h4>
-                   
+                   <h4>7.2 the refund will be processed in 7 days & will get refunded to customer after 24 hours of processing</h4>
                 </div>
             </li>
 
