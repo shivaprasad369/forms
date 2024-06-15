@@ -23,7 +23,7 @@ export default function Basic({errors}) {
 setLoad(false)
       //  const res=await axios.post('https://formpanel.onrender.com/api/v1/post',datas)
       // const res=await axios.post('http://localhost:8080/api/v1/post',datas)
-      const res=await axios.post('https://formpanel.onrender.com/api/v1/payments')
+      const res=await axios.post('https://formpanel.onrender.com/api/v1/payments',datas)
       if(res){
         console.log(res.data.data.data.instrumentResponse.redirectInfo.url)
         window.location.href=res.data.data.data.instrumentResponse.redirectInfo.url;
