@@ -20,18 +20,35 @@ export default function Basic({errors}) {
  
     const handleSubmit=async(e)=>{
      e.preventDefault()
-setLoad(true)
-       const res=await axios.post('https://formpanel.onrender.com/api/v1/post',datas)
-       if(res){
+setLoad(false)
+      //  const res=await axios.post('https://formpanel.onrender.com/api/v1/post',datas)
+      // const res=await axios.post('http://localhost:8080/api/v1/post',datas)
+      const res=await axios.post('https://formpanel.onrender.com/api/v1/payments')
+      if(res){
+        console.log(res.data.data.data.instrumentResponse.redirectInfo.url)
+        window.location.href=res.data.data.data.instrumentResponse.redirectInfo.url;
+      }
+      window.PhonePeCheckout.transact({ callback, type: "IFRAME" });
+      function callback (res) {
+        if (res === 'USER_CANCEL') {
+          /* Add merchant's logic if they have any custom thing to trigger on UI after the transaction is cancelled by the user*/
+          return;
+        } else if (res === 'CONCLUDED') {
+          /* Add merchant's logic if they have any custom thing to trigger on UI after the transaction is in terminal state*/
+          return;
+        }
+        window.PhonePeCheckout.closePage();
+      //  if(res){
 
-         alert("thank you so much")
-         setLoad(false)
-       }
+      //    alert("thank you so much")
+      //    setLoad(false)
+      //  }
+      console.log(res.data)
        setLoad(false)
       console.log(load)
       
     }
-
+  }
   return (
     <div>
       
