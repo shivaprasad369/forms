@@ -60,7 +60,7 @@ fetchData();
             <StyledTableCell align="right">place</StyledTableCell>
          
            
-            <StyledTableCell align="right">Call</StyledTableCell>
+            <StyledTableCell align="right">TransactionId</StyledTableCell>
 
             <StyledTableCell align="right">WhatsApp</StyledTableCell>
           </TableRow>
@@ -74,8 +74,8 @@ fetchData();
               <StyledTableCell align="right">{row.Email}</StyledTableCell>
               <StyledTableCell align="right">{row.Phone}</StyledTableCell>
               <StyledTableCell align="right">{row.Interst}</StyledTableCell>
-            
-              <StyledTableCell align="right"><a href={`tel:${row.Phone}`} className='text-white font-bold bg-blue-500 px-3 py-2'>CallNow</a> </StyledTableCell>
+              <StyledTableCell align="right">{row.Course}</StyledTableCell>
+              {/* <StyledTableCell align="right"><a href={`tel:${row.Phone}`} className='text-white font-bold bg-blue-500 px-3 py-2'>CallNow</a> </StyledTableCell> */}
             
               <StyledTableCell align="right"><a href={`https://wa.me/${row.Phone}`} className='text-white font-bold bg-green-500 px-3 py-2'>WhatsApp</a></StyledTableCell></StyledTableRow>
           )}

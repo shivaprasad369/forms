@@ -1,32 +1,41 @@
 
 import './App.css';
-import Form from './Form';
+
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Admin from './Admin';
-import Footer from './Footer';
-import Tearm from './Tearm';
-import Privacy from './Privacy';
-import Refund from './Refund';
-import Header from './Header';
-
+import HomePage from './Components/Home/HomePage';
+import AboutContain from './Components/ABout.jsx/AboutContain';
+import BlogContainer from './Components/BLog/BlogContainer';
+import BlogsDetail from './Components/BlogDetails/BlogsDetail.jsx'
+import ContactContainer from './Components/Contact/ContactContainer.jsx'
+import Collections from './Components/Collection/Collections.jsx'
+import Contains from './Components/ProductDetails/Contains.jsx'
+import Career from './Components/Carrer/Career.jsx';
+import Contain from './Components/Team/Contain.jsx';
 function App() {
+  
   return (
     <>
     <BrowserRouter>
-    <Header/>
+   
     <Routes>
-      <Route path="/" element={<Form/>}/>
-      <Route path="/admin" element={<Admin/>}/>
-      <Route path="/terms" element={<Tearm/>}/>
-      <Route path="/privacy" element={<Privacy/>}/>
-      <Route path="/refund" element={<Refund/>}/>
+     <Route path='/' element={<HomePage/>} />
+     <Route path='/about' element={<AboutContain/>} />
+     <Route path='/blog' element={<BlogContainer/>} />
+     <Route path='/career' element={<Career/>} />
+     <Route path='/team' element={<Contain/>} />
+
+
+     <Route path='/blog/:id' element={<BlogsDetail/>} />
+     <Route path='/contact' element={<ContactContainer/>} />
+     <Route path='/products' element={<Collections/>} />
+     <Route path='/products/:id/:type/:name' element={<Contains/>} />
 
 
     </Routes>
-  <Footer/>
+
     </BrowserRouter>
-    {/* <Professional/> */}
+  
     </>
   );
 }
