@@ -95,9 +95,8 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
                 delay:0.6
               },
             }}
-            className="w-[70%]">
-
-As one of the world’s leading medical technology companies, Rakshaum aims to protect and improve the health of people around the world. 
+            className="w-[70%] text-sm text-justify">
+We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming healthcare through the meticulous design and production of world-class medical syringes. As we prepare to launch full-scale manufacturing operations, our focus remains on pioneering high-performance, precision-engineered medical devices that meet the ever-evolving needs of healthcare professionals and institutions.
             </motion.p>
             <motion.div
              initial={{

@@ -13,14 +13,12 @@ export default function We() {
             <div className='w-[100%] flex flex-col gap-5'>
                 <h1 className='text-2xl font-bold text-[#3fb4e2] tracking-wide'>What do we stand for?</h1>
                 <p className='leading-[1.7rem] tracking-wider'>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore minus repellat suscipit, soluta necessitatibus adipisci amet sapiente ullam consequatur, vero fugit. Cumque consequatur fugit sapiente cupiditate, corrupti mollitia autem.
+                At Rakshaum Medical Devices, we specialize in the design, manufacture, and supply of high-quality medical equipment, with a focus on syringes, cannulas, and other critical healthcare devices. Our commitment to precision, safety, and innovation drives us to produce medical products that meet the highest international standards. We serve healthcare providers worldwide, offering products that improve patient care, streamline procedures, and enhance medical outcomes.
                 </p>
                 <p className='leading-[1.7rem] tracking-wider'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore minus repellat suscipit, soluta necessitatibus adipisci amet sapiente ullam consequatur, vero fugit. C
+                At Rakshaum Medical Devices, we are dedicated to producing high-performance medical equipment that ensures safety, precision, and reliability in every use. With our advanced manufacturing capabilities and adherence to international standards, we provide healthcare professionals with the tools they need to deliver optimal patient care.
                 </p>
-                <p className='leading-[1.7rem] tracking-wider'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat inventore minus repellat suscipit, soluta necessitatibus adipisci amet sapiente 
-                </p>
+               
             </div>
             <motion.div
             animate={{
@@ -36,16 +34,16 @@ export default function We() {
 
             </motion.div>
             <div className='w-[100%] flex flex-col gap-7'>
-              {['High-visibility clothing',
-                'Respiratory equipment',
-                'Disposable PPE kits',
-                'Single-use coveralls',
-                'Personal protective equipment',
-                'Medical devices & instruments',
-                'Personal hygiene products',
-                'Prevents Tiny Droplets',
-                'Prevent The Spread Of Germs',
-                'Essential Medical Equipment'
+              {['Precision Syringes',
+                'Innovative Equipment',
+                'Reliable Devices',
+                'Safe Solutions',
+                'Medical Excellence',
+                'Advanced Technology',
+                'Quality Manufacturing',
+                'Sterile Products',
+                'Global Supply',
+                'Healthcare Innovation'
               ].map((data,index)=>  <motion.div
               initial={{scale:0}}
               viewport={{once:true}}

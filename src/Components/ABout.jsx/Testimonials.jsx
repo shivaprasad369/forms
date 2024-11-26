@@ -39,11 +39,7 @@ export default function Testimonials() {
             <div className="w-[30%] flex flex-col gap-5">
               <h1 className="text-4xl uppercase font-bold">Happy Client</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                eveniet nam excepturi exercitationem consectetur quibusdam,
-                numquam adipisci, ab labore molestiae facilis ipsum sint
-                accusamus id beatae architecto provident, similique
-                reprehenderit.
+              At Rakshaum Medical Devices, we take great pride in the satisfaction of our clients. Over the years, we have built strong, lasting relationships with healthcare professionals, hospitals, clinics, and medical distributors around the world.
               </p>
               <span className="text-xl font-semibold">
                 Review On
@@ -121,18 +117,14 @@ export default function Testimonials() {
                     </div>
                     </div>
                     <h1 className="leading-[1.8rem]  tracking-wider text-xl font-semibold">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsa necessitatibus neque possimus eveniet. Sequi
-                      doloribus, blanditiis debitis quas facilis beatae tenetur
-                      laudantium totam maiores ratione quia, nobis reiciendis
-                      libero perferendis? Lorem ipsum dolor sit amet consectetur
+                    Rakshaum Medical Devices has been a reliable partner in our hospital. The syringes and IV equipment we use from them consistently meet the highest standards of quality and safety. Their attention to detail and commitment to excellence make them our preferred supplier for all medical equipment needs.
                     </h1>
                   <div className="mt-5 flex flex-col gap-2">
                     <h1 className="text-2xl font-bold">
-                      Name
+                    Dr. Anjali Sharma
                     </h1>
                     <p className="text-md text-orange-500 tracking-wide font-semibold">
-                      Position Name
+                    Senior Medical Officer
                     </p>
 
                   </div>
@@ -155,18 +147,14 @@ export default function Testimonials() {
                     </div>
                     </div>
                     <h1 className="leading-[1.8rem]  tracking-wider text-xl font-semibold">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsa necessitatibus neque possimus eveniet. Sequi
-                      doloribus, blanditiis debitis quas facilis beatae tenetur
-                      laudantium totam maiores ratione quia, nobis reiciendis
-                      libero perferendis? Lorem ipsum dolor sit amet consectetur
+                    We’ve been sourcing medical devices from Rakshaum for over a year now, and the quality of their products has never disappointed us. Their syringes are incredibly precise, and we appreciate their commitment to timely deliveries. A trusted name in medical equipment!
                     </h1>
                   <div className="mt-5 flex flex-col gap-2">
                     <h1 className="text-2xl font-bold">
-                      Name
+                    Rajesh Kumar
                     </h1>
                     <p className="text-md text-orange-500 tracking-wide font-semibold">
-                      Position Name
+                    Procurement Manager
                     </p>
 
                   </div>

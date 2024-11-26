@@ -79,12 +79,12 @@ export default function Footer1() {
                     <div className='flex flex-col gap-3'>
 <h1 className='text-xl font-bold pb-[1rem] border-b-[1px] border-gray-400 w-fit'>Browse Category</h1>
 <div className='flex flex-col gap-3'>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem  dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem </a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum </a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
+    <a href="/products/1/1/Hypodermic Syringse" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Syrings</a>
+    <a href="/products/2/1/IV%20Set" className='text-lg font-semibold hover:text-blue-400 transition-all'>IV Set</a>
+    <a href="/products/3/1/Hypodermic%20Needels" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Needels </a>
+    <a href="/products/5/1/IV%20Fluidss" className='text-lg font-semibold hover:text-blue-400 transition-all'>IV Fluids</a>
+    <a href="/products/6/1/Cannula" className='text-lg font-semibold hover:text-blue-400 transition-all'>Cannula</a>
+    <a href="/products/4/1/Drip%20Set" className='text-lg font-semibold hover:text-blue-400 transition-all'>Drip Set</a>
 
 </div>
 

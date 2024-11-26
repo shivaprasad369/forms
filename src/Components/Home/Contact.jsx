@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="w-[100%] items-center justify-center flex flex-col gap-5 py-[4rem]">
         <h1 className="text-[#3fb4e2] text-4xl font-bold tracking-wider">
         
-        {`Welcome To Our Support. We're Here To Help.`.split(' ').map((data,index)=><motion.span key={index} initial={{opacity:0}}
+        {`Welcome To Our Support. We're Here To Help.`.split('').map((data,index)=><motion.span key={index} initial={{opacity:0}}
            whileInView={{opacity:1,transition:{
             delay:index*0.1,
             duration:0.5,

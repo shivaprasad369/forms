@@ -47,13 +47,10 @@ export default function Equipment({id}) {
             <FaMedkit  className="text-[4rem]" />
           </h1>
           <h1 className="text-2xl justify-end flex font-bold">   
-            Essential Medical Equipment
+          CE Certification (Conformité Européenne)
           </h1>
           <p className="text-[#5a5a5a] flex justify-end text-right leading-[1.7rem]">
-            Donec vitae sapien ut libero venenatis faucibus. Nullam quis
-            ante.Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
-            fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
-            consequat, leo eget bibendum sodales, augue velit cursus nunc.
+          The CE mark indicates that our medical devices conform to European Union health, safety, and environmental protection standards. This certification allows us to sell our products within the European Economic Area (EEA), ensuring they meet stringent safety and performance requirements.
           </p>
         </div>
       </motion.div>

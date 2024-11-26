@@ -76,20 +76,20 @@ const CustomSwiper = () => {
                          }
                         }}
                           src={'https://3.imimg.com/data3/JA/UN/MY-14388331/sterile-hypodermic-single-use-syringes.jpg'}
-                          className="object-cover w-[100%] h-[100%] "
+                          className="object-cover w-[70%]  "
                           alt=""
                         />
                       </div>
-                      <div className={`${card1?'text-white':'text-black'} duration-500 w-[33%] relative  flex flex-col gap-5  p-[1.5rem]`}>
+                      <div className={`${card1?'text-white':'text-black'} duration-500 w-[33%] relative  flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card1?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-xl z-20 font-bold">Hypodermic Syrings</h1>
-                        <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 30ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        <h1 className="text-xl z-20 font-bold">Hypodermic Syringes</h1>
+                        <span className="tracking-wider z-20 text-sm h-fit leading-[1.4rem]">
+                        A hypodermic syringe is a medical instrument used to inject fluids into the body or withdraw fluids from the body.  
                         </span>
                       </div>
                     </div>
                     <div onMouseEnter={()=>setCard2(true)} onMouseLeave={()=>setCard2(false)}  className="w-[100%] flex flex-row-reverse justify-between">
-                      <div className="w-[70%] h-[18rem] overflow-hidden flex items-center ">
+                      <div className="w-[70%] h-[18rem] justify-center overflow-hidden flex items-center ">
                       <motion.img
                         animate={{
                           scale: card2? 1.1 : 1,
@@ -97,23 +97,23 @@ const CustomSwiper = () => {
                           duration: 1
                          }
                         }}
-                          src={'https://www.visioneng.us/wp-content/uploads/2020/12/Hypodermic-needle-pic.jpg'}
-                          className=" w-[100%] h-[100%] object-cover"
+                          src={'https://www.narang.com/medical-disposables/hypodermic-products-orange/images/ds5030.jpg'}
+                          className=" w-[80%] h-[100%] object-cover"
                           alt=""
                         />
                       </div>
                       <div className={`${card2?'text-white':'text-black'} 
                       duration-500 w-[30%] relative  flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card2?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-xl z-20 font-bold">Hypodermic Needels</h1>
+                        <h1 className="text-xl z-20 font-bold">Hypodermic Needles</h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 25ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        A hypodermic needle is a thin, hollow tube made of stainless steel, designed for use in medical procedures. 
                         </span>
                       </div>
                     </div>
                   </div>
-                  <div  onMouseEnter={()=>setCard3(true)} onMouseLeave={()=>setCard3(false)}  className="w-[35%] flex flex-col">
-                    <div className="flex  overflow-hidden w-[100%] h-[15rem]">
+                  <div  onMouseEnter={()=>setCard3(true)} onMouseLeave={()=>setCard3(false)}  className="w-[35%] gap-10 flex flex-col">
+                    <div className=" justify-center overflow-hidden flex items-center w-[100%] h-[15rem]">
                     <motion.img
                         animate={{
                           scale: card3? 1.1 : 1,
@@ -123,7 +123,7 @@ const CustomSwiper = () => {
                         }}
                         src={'https://magicmed.in/wp-content/uploads/2023/09/b-braun-b-braun-intrafix-safeset-iv-administration-set-i147-47-15819643519075.jpg'}
 
-                        className="w-[100%] h-fit "
+                        className="w-[80%] h-fit "
                         alt=""
                       />
                     </div>
@@ -132,7 +132,7 @@ const CustomSwiper = () => {
                         <motion.div animate={{width:card3?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
                         <h1 className="text-xl z-20 font-bold">IV Set</h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 60ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        An IV set is a medical device used to deliver fluids, medications, or nutrients directly into a patient's bloodstream. 
                         </span>
                       </div>
                   </div>
@@ -152,23 +152,23 @@ const CustomSwiper = () => {
                           duration: 1
                          }
                         }}
-                        src={'https://5.imimg.com/data5/SELLER/Default/2022/2/AO/WY/KF/101241860/romsons-pedia-drip-paediatric-measured-volume-iv-set.jpg'}
+                        src={'https://image.made-in-china.com/226f3j00NZWirVlBLCgv/Medical-Disposable-Sterile-IV-Infusion-Giving-Fluid-Drip-Set.webp'}
 
-                          className="object-cover h-[100%] w-[100%] "
+                          className="object-cover  w-[80%] "
                           alt=""
                         />
                       </div>
                       <div className={`${card4?'text-white':'text-black'} duration-500 w-[30%]
                        relative  flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card4?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-md z-20 font-bold">Drip Set</h1>
+                        <h1 className="text-xl z-20 font-bold">Drip Set</h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 60ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        A drip set, also known as an infusion set or IV drip set, is a medical device used to deliver fluids.
                         </span>
                       </div>
                     </div>
                     <div onMouseEnter={()=>setCard5(true)} onMouseLeave={()=>setCard5(false)}  className="w-[100%] flex  justify-between">
-                      <div className="w-[70%] h-[18rem] overflow-hidden flex items-center ">
+                      <div className="w-[70%] h-[18rem] justify-center overflow-hidden flex items-center ">
                       <motion.img
                         animate={{
                           scale: card5? 1.1 : 1,
@@ -176,9 +176,9 @@ const CustomSwiper = () => {
                           duration: 1
                          }
                         }}
-                        src={'https://manhattanivtherapy.com/wp-content/uploads/2023/12/IV-Fluids-for-Dehydration-Blog-v2.webp'}
+                        src={'https://www.codanusa.com/wp-content/uploads/2023/04/CODAN_NS1000-26.94631000-ML_SodiumChloride-E1-Web-600x737.jpg'}
 
-                          className=" w-[100%] h-[100%] object-cover"
+                          className=" w-[80%]  object-cover"
                           alt=""
                         />
                       </div>
@@ -187,13 +187,13 @@ const CustomSwiper = () => {
                         <motion.div animate={{width:card5?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
                         <h1 className="text-xl z-20 font-bold">IV Fluids</h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        IV fluids are sterile liquids administered directly into a patient's bloodstream via an intravenous (IV) drip or infusion. 
                         </span>
                       </div>
                     </div>
                   </div>
                   <div  onMouseEnter={()=>setCard6(true)} onMouseLeave={()=>setCard6(false)}  className="w-[35%] flex flex-col">
-                    <div className="flex  overflow-hidden w-[100%] h-[15rem]">
+                    <div className="flex items-center justify-center  overflow-hidden w-[100%] h-[15rem]">
                     <motion.img
                         animate={{
                           scale: card6? 1.1 : 1,
@@ -203,7 +203,7 @@ const CustomSwiper = () => {
                         }}
                         src={'https://www.polymedicure.com/wp-content/uploads/2019/05/polyflex.jpg'}
 
-                        className="w-[100%] h-[100%] "
+                        className="w-[80%]  "
                         alt=""
                       />
                     </div>
@@ -211,7 +211,7 @@ const CustomSwiper = () => {
                         <motion.div animate={{width:card6?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
                         <h1 className="text-xl z-20 font-bold">Cannula</h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
-                        The 15ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.
+                        A cannula is a medical device, typically a small, flexible tube, used for insertion into the body to administer fluids, medications, or to obtain samples.
                         </span>
                       </div>
                   </div>

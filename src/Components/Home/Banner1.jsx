@@ -8,17 +8,17 @@ const Banner1 = () => {
   const slides = [
     {
       title: "What drives us",
-      description: "We protect and improve the health of people around the world.",
+      description: "Revolutionizing Healthcare with Precision-Engineered Syringes",
       image: "https://d1svk58pjf7hyt.cloudfront.net/wp-content/uploads/sites/6/2024/08/19154220/intravenous-fluids.jpg_s1024x1024wisk20cbk2OGdkMj18sim2N1D7Yt1AdKkSzCg0GB816VE-kuP4.jpg",
     },
     {
       title: "What drives us",
-      description: "We protect and improve the health of people around the world.",
+      description: "Pioneering the Future of Medical Syringe Manufacturing",
       image: "https://omnisurge.co.za/wp-content/uploads/2019/03/needles-and-syringes.png",
     },
     {
       title: "What drives us",
-      description: "We protect and improve the health of people around the world. ",
+      description: "Delivering Excellence in Medical Devices for a Safer Tomorrow ",
       image: "https://facemedstore.com/wp-content/uploads/2023/05/hypodermic-needle-manufacturers-featured-768x432.webp",
     },
   ];
