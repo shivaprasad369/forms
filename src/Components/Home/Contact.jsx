@@ -8,16 +8,24 @@ export default function Contact() {
     <Container>
       <div className="w-[100%] items-center justify-center flex flex-col gap-5 px-[5%] py-[4rem]">
         <h1 className="text-[#3fb4e2] max-md:text-3xl max-lg:text-center md:text-4xl font-bold tracking-wider">
-        
-        {`Welcome To Our Support. We're Here To Help.`.split('').map((data,index)=><motion.span key={index} initial={{opacity:0}}
-           whileInView={{opacity:1,transition:{
-            delay:index*0.1,
-            duration:0.5,
-            ease:'easeInOut'
-           }}}
-           >
-            {data}
-           </motion.span>)}
+          {`Welcome To Our Support. We're Here To Help.`
+            .split("")
+            .map((data, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  transition: {
+                    delay: index * 0.1,
+                    duration: 0.5,
+                    ease: "easeInOut",
+                  },
+                }}
+              >
+                {data}
+              </motion.span>
+            ))}
         </h1>
         <span className="md:text-lg max-md:text-center tracking-[0.3em]">
           {" "}
@@ -25,29 +33,26 @@ export default function Contact() {
         </span>
         <div className="w-[100%] items-center lg:flex max-lg:flex max-lg:flex-col justify-center  mt-10 gap-10">
           <motion.div
-          animate={{
-            scale:0.8,
-            opacity:0
-          }}
-        
-              whileInView={{
-               scale:1,
-               opacity:1,
-               transition:{
-                duration:0.5
-               }
+            animate={{
+              scale: 0.8,
+              opacity: 0,
+            }}
+            whileInView={{
+              scale: 1,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+              },
+            }}
+            className="border-[1px] relative md:flex gap-5 max-lg:flex max-lg:flex-col lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]"
 
-              }}
-       
-          className="border-[1px] relative lg:flex max-lg:flex max-lg:flex-col gap-5 max-lg:w-[100%] lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
+          >
             <div className="bg-[#3fb4e2] px-5 py-3  text-md rounded-md h-fit tracking-wider right-[10%] absolute bottom-[-1.5rem] text-white font-bold">
-                <h1>
-                  <a href="/contact">
-                  Know More {'>'}
-                  </a>
-                  </h1>
+              <h1>
+                <a href="/contact">Know More {">"}</a>
+              </h1>
             </div>
-            <div className="w-[100%] flex flex-col gap-5">
+            <div className=" flex flex-col gap-5">
               <FiPhoneCall className="text-[4rem]" />
             </div>
             <div className="flex flex-col gap-1">
@@ -59,33 +64,35 @@ export default function Contact() {
               </span>
             </div>
           </motion.div>
-          <motion.div 
-          animate={{
-            scale:0.8,
-            opacity:0
-          }}
-        
-              whileInView={{
-               scale:1,
-               opacity:1,
-               transition:{
-                duration:0.5,
-                delay:0.3
-               }
-
-              }}
-          className="border-[1px] relative md:flex gap-5 max-lg:flex max-lg:flex-col lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
-            <div className="bg-[#3fb4e2] px-5 py-3  text-md rounded-md h-fit tracking-wider left-[23%] absolute bottom-[-1.5rem] text-white font-bold">
-                <h1>Contact {'>'}</h1>
-            </div>
+          <motion.div
+            animate={{
+              scale: 0.8,
+              opacity: 0,
+            }}
+            whileInView={{
+              scale: 1,
+              opacity: 1,
+              transition: {
+                duration: 0.5,
+                delay: 0.3,
+              },
+            }}
+            className="border-[1px] relative md:flex gap-5 max-lg:flex max-lg:flex-col lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]"
+          >
+            <a href="/contact" className="bg-[#3fb4e2] px-5 py-3  text-md rounded-md h-fit tracking-wider left-[23%] absolute bottom-[-1.5rem] text-white font-bold">
+              <h1>Contact {">"}</h1>
+            </a>
             <div className="w-100%] flex flex-col gap-5">
-              <FaRocketchat  className="text-[4rem]" />
+              <FaRocketchat className="text-[4rem]" />
             </div>
             <div className="flex flex-col gap-1">
-              <h1 className="text-lg tracking-[0.3em] uppercase">Online Chat</h1>
+              <h className="text-lg tracking-[0.3em] uppercase">
+                Online Chat
+              </h>
               <p className="text-[35px] font-bold ">Live Chat Now</p>
               <span className="tex-xs mt-5 text-gray-600">
-              Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.Lorem ipsum dolor
+                Nullam quis ante. Etiam sit amet orci eget eros faucibus
+                tincidunt. Duis leo.Lorem ipsum dolor
               </span>
             </div>
           </motion.div>

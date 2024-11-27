@@ -35,8 +35,10 @@ export default function Mask() {
                 }}
                 className="flex flex-col gap-3 w-[100%] items-center justify-center">
                     <img src={require('../../Assets/icon-2.webp')} className="w-[8rem]" alt="" />
-                    <h1 className="text-xl font-bold text-center">Precision and Reliability</h1>
-                    <p className="text-center w-[80%]">Our high-quality medical syringes are meticulously engineered for accurate and consistent performance, ensuring safe and effective administration of medications.
+                    <h1 className="text-xl font-bold text-blue-500 uppercase text-center">Precision and Reliability</h1>
+                    <p className="text-center w-[80%]">
+                    High-quality syringes designed for accurate and safe medication administration.  
+
 
 </p>
                 </motion.div>
@@ -51,9 +53,9 @@ export default function Mask() {
                   transition: { duration: 1,delay:0.5 },
                 }} className="flex flex-col gap-3 w-[100%] items-center justify-center">
                     <img src={require('../../Assets/icon-4.webp')} className="w-[8rem]" alt="" />
-                    <h1 className="text-xl font-bold text-center">Advanced Manufacturing
+                    <h1 className="text-xl font-bold uppercase text-blue-500 text-center">Advanced Manufacturing
                     </h1>
-                    <p className="text-center w-[80%]">Produced using state-of-the-art technology, our syringes are crafted to meet the highest industry standards of quality, sterility, and safety.
+                    <p className="text-center w-[80%]">Crafted with state-of-the-art technology for unmatched sterility, safety, and quality.
 </p>
                 </motion.div>
           </div>
@@ -86,9 +88,8 @@ export default function Mask() {
                 }}
                 className="flex flex-col gap-3 w-[100%] items-center justify-center">
                     <img src={require('../../Assets/icon-3.webp')} className="w-[8rem]" alt="" />
-                    <h1 className="text-xl font-bold text-center">Versatility</h1>
-                    <p className="text-center w-[80%]">Designed for a wide range of medical applications, our syringes are ideal for use in hospitals, clinics, and emergency care settings, offering ease of use for healthcare professionals.
-
+                    <h1 className="text-xl font-bold uppercase text-blue-500 text-center">Versitility</h1>
+                    <p className="text-center w-[80%]">Perfect for diverse medical needs in hospitals, clinics, and emergency settings.
 </p>
                 </motion.div>
                 <motion.div
@@ -103,9 +104,9 @@ export default function Mask() {
                 }}
                 className="flex flex-col gap-3 w-[100%] items-center justify-center">
                     <img src={require('../../Assets/icon-1.webp')} className="w-[8rem]" alt="" />
-                    <h1 className="text-xl font-bold text-center">Commitment to Innovation</h1>
-                    <p className="text-center w-[80%]">At Rakshaum Medical Devices, we are dedicated to continuous innovation, ensuring that our syringes meet evolving healthcare needs while maintaining excellence in both design and function.
-
+                    <h1 className="text-xl font-bold uppercase text-blue-500 text-center">Commitment to Innovation</h1>
+                    <p className="text-center w-[80%]">
+                    Continuous innovation ensures syringes meet evolving healthcare demands effectively.
 </p>
                 </motion.div>
           </div>

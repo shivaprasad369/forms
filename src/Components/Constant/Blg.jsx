@@ -106,8 +106,9 @@ const data=[
             },
 
         ],
+        content:"In critical care settings, precision and reliability can mean the difference between life and death. Syringes used in these scenarios must meet the highest quality standards to ensure accurate medication delivery.  "
     
-        content:"Disposable syringes have become a cornerstone of modern healthcare, ensuring the safe administration of medications and vaccines. Unlike reusable syringes, disposable ones are designed for single use, significantly reducing the risk of cross-contamination and infections."
+        // content:"Disposable syringes have become a cornerstone of modern healthcare, ensuring the safe administration of medications and vaccines. Unlike reusable syringes, disposable ones are designed for single use, significantly reducing the risk of cross-contamination and infections."
     },
 
 

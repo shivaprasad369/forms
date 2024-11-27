@@ -59,7 +59,7 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
 </p>
        </div>
       </div> */}
-      <div className="w-[100%] max-w-[1400px] max-md:px-[5%] md:px-[10%] pt-[8rem] max-md:py-[3rem] md:py-[7rem]">
+      <div className="w-[100%] max-w-[1400px] max-md:px-[5%] md:px-[5%] pt-[8rem] max-md:py-[3rem]">
         <div className="w-[100%] lg:flex max-lg:flex max-lg:flex-col max-lg:gap-5 ">
         <div className="lg:w-[40%] relative mt-[-5rem] flex flex-col gap-3">
           <div className="absolute right-0 max-lg:hidden  bottom-[-2rem]">
@@ -79,7 +79,7 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
                 delay:0.6
               },
             }}
-            className="text-[2.5rem] font-[600] text-blue-400">
+            className="text-[2.5rem] uppercase font-[700] text-[#3fb4e2]">
             About Us
             </motion.h1>
             <motion.p
@@ -95,10 +95,11 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
                 delay:0.6
               },
             }}
-            className="md:w-[70%] text-sm text-justify">
+            className="md:w-[80%] text-sm  leading-[1.5rem]">
 We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming healthcare through the meticulous design and production of world-class medical syringes. As we prepare to launch full-scale manufacturing operations, our focus remains on pioneering high-performance, precision-engineered medical devices that meet the ever-evolving needs of healthcare professionals and institutions.
             </motion.p>
-            <motion.div
+            <motion.a
+            href="/about"
              initial={{
               y: 50,
               opacity:0
@@ -110,10 +111,10 @@ We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming
                 duration: 0.5,
                 delay:0.6
               },
-            }} className="px-4 py-2 text-xs w-fit font-bold hover:bg-blue-300 hover:text-white hover:border-blue-300 text-blue-400 border-[2px] border-blue-400">
+            }} className="px-4 py-2 text-xs w-fit font-bold hover:bg-blue-400 hover:text-white hover:border-blue-500 text-blue-500 border-[2px] border-blue-400">
               Explore more
 
-            </motion.div>
+            </motion.a>
      
         </div>
           <div

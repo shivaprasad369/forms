@@ -11,21 +11,19 @@ export default function About() {
   return (
     <Container>
       <div className="w-[100%] pb-[4rem] flex flex-col max-lg:px-[3%] text-[#252525] gap-7 items-center justify-center">
-        <h1 className="text-3xl  font-semibold tracking-wider text-[#3fb4e2]">
-          <h1>Working@Reakshaum</h1>
+        <h1 className="text-3xl  font-bold tracking-wider text-[#3fb4e2]">
+          <h1>Working@RAKSHAUM</h1>
         </h1>
-        <p className="md:text-6xl max-md:text-4xl font-semibold text-[#252525] text-center">
-          Your time to shape the <br className="max-lg:hidden"/>
-          future work
+        <p className="md:text-5xl max-md:text-4xl font-bold uppercase text-[#3491b6] text-center">
+        Join Our Team at Rakshaum  <br className="max-lg:hidden"/>
+        Medical Devices
+          {/* Join Our Team at Rakshaum Medical Devices */}
         </p>
 
         <p className="lg:w-[55%] text-xl tracking-wider leading-[1.7rem] text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, libero
-          autem modi reiciendis a nemo sed, labore perferendis quibusdam cumque
-          eum magni, asperiores quo saepe molestias temporibus vel culpa
-          deleniti.
+        Your ideas can make a difference. Whether you're an experienced professional or just starting your career, you'll find opportunities to grow and contribute to meaningful projects that impact lives.  
         </p>
-
+      <h1 className="text-3xl font-bold text-center">Together, let's make a difference</h1>
         <div className="w-[100%] items-center justify-center flex flex-col gap-10 mt-10">
           <div className="md:w-[70%] p-[2rem] flex flex-col items-center justify-center gap-5 rounded-xl border-[1px] border-gray-300">
             <h1 className="text-3xl font-bold uppercase text-[#3fb4e2]">

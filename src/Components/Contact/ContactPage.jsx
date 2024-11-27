@@ -74,7 +74,7 @@ Baltimore, MD, USA 4508
             </div>
         </div>
         <div className='lg:w-[70%] flex flex-col gap-5'>
-            <h1 className='text-3xl capitalize font-bold text-[#3fb4e2]'>Contact form</h1>
+            <h1 className='text-3xl  font-bold text-[#3fb4e2] uppercase'>Contact form</h1>
             <form className='w-[100%] flex flex-col gap-8'>
                 <input type="text" placeholder='"Name' name='name'
                 className='outline-none border-[1px] border-gray-300 rounded-sm px-3 py-4 w-[100%]' required/>

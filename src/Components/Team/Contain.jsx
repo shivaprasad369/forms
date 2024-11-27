@@ -6,6 +6,7 @@ import Teams from './Teams'
 import Header1 from '../Home/Header1'
 import BannerAbove from '../Home/BannerAbove'
 import Banner3 from '../Home/Banner3'
+import Banner1 from '../Home/Banner1'
 
 export default function Contain() {
   return (
@@ -14,10 +15,10 @@ export default function Contain() {
      <Banner title={'Our Team'}
      description={'Meet our team'}/>  */}
      <div className="w-[100vw] bg5 ">
-      <BannerAbove/>
+      {/* <BannerAbove/> */}
      <Header/> 
      {/* <Banner/> */}
-     <Banner3/>
+     <Banner1/>
     </div>
      <Teams/>
      <Footer1/>

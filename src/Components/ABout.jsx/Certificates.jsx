@@ -42,7 +42,7 @@ export default function Certificate({id}) {
                 ISO 13485:2016 - Medical Devices Quality Management System
                 </h1>
                 <p className='text-[#5a5a5a] leading-[1.7rem]'>
-                Detail: This certification ensures that our quality management system is in compliance with the specific requirements for medical device manufacturing. It covers all aspects of production, from design and development to production and post-market surveillance, ensuring our products meet regulatory and customer requirements.
+               This certification ensures that our quality management system is in compliance with the specific requirements for medical device manufacturing. It covers all aspects of production, from design and development to production and post-market surveillance, ensuring our products meet regulatory and customer requirements.
                 </p>
             </div>
       </motion.div>

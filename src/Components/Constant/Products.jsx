@@ -133,7 +133,7 @@ const Productdata=[
     ],
 
     short:'Nunc vehicula quam semper odio varius tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posue.',
-        name:'Hypodermic Syringse',
+        name:'Hypodermic Syringes',
         price:'Rs. 329.00',
 
     },
@@ -278,7 +278,7 @@ const Productdata=[
         typeId:1,
         category:'1.5ML Syringe',
         image:'https://www.kindly-group.com/uploads/IMG_8296.jpg',
-        name:'Hypodermic Needels',
+        name:'Hypodermic Needles',
         price:'Rs. 329.00',
         images:[
             {

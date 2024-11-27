@@ -12,11 +12,11 @@ export default function Footer1() {
 
       <div className="w-[100%] z-30  relative flex flex-col text-white  items-center justify-center bg7">
         <div className="absolute top-0 left-0 -z-10 w-[100%] h-[100%] bg-gradient-to-r from-[#40faea94] to-[#0dc7ff98]"></div>
-            <div className='w-[100%] px-[7%] z-30  lg:flex max-lg:flex max-lg:flex-col justify-around  py-[4rem] '>
-                <div className='lg:w-[30%] flex flex-col gap-5'>
-                    <img src={require('../../Assets/logos.jpg')} className='w-[80%]' alt="" />
+            <div className='w-[100%] px-[7%] z-30  lg:flex max-lg:flex max-lg:flex-col justify-between  py-[4rem] '>
+                <div className='lg:w-[35%] flex flex-col gap-3'>
+                    <img src={require('../../Assets/logo.png')} className='w-[80%]' alt="" />
                     <p className=' text-md font-semibold tracking-wider leading-[1.7rem]'>
-                    We are many variations of the passages available but the majoro have suffered alteration injected.
+                    We are trusted provider of innovative and reliable medical solutions, committed to enhancing healthcare with cutting-edge technology and exceptional service.
                     </p>
                     
                     <div className=' flex flex-col gap-3'>
@@ -63,13 +63,15 @@ export default function Footer1() {
                     </div> */}
                     
                 </div>
-                <div className='flex flex-col gap-3 mt-[2rem]'>
+                <div className='lg:flex lg:w-[40%] justify-between max-lg:flex max-lg:flex-col gap-5 '>
+
+                <div className='flex flex-col gap-3 w-fit max-lg:mt-[2rem]'>
 <h1 className='md:text-xl max-md:text-2xl font-bold pb-[1rem] border-b-[1px] border-gray-400 w-fit'>Quick Links</h1>
 <div className='flex flex-col gap-3'>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>About Us</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Services</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Contact Us</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Careers</a>
+    <a href="/about" className='text-lg font-semibold hover:text-blue-400 transition-all'>About Us</a>
+    <a href="/products" className='text-lg font-semibold hover:text-blue-400 transition-all'>Products</a>
+    <a href="/contact" className='text-lg font-semibold hover:text-blue-400 transition-all'>Contact Us</a>
+    <a href="/career" className='text-lg font-semibold hover:text-blue-400 transition-all'>Careers</a>
     <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Privacy Policy</a>
     <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Terms & Conditions</a>
 
@@ -79,9 +81,9 @@ export default function Footer1() {
                     <div className='flex flex-col gap-3 max-lg:pt-[2rem]'>
 <h1 className='md:text-xl max-md:text-2xl font-bold pb-[1rem] border-b-[1px] border-gray-400 w-fit'>Browse Category</h1>
 <div className='flex flex-col gap-3'>
-    <a href="/products/1/1/Hypodermic Syringse" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Syrings</a>
+    <a href="/products/1/1/Hypodermic Syringse" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Syringes</a>
     <a href="/products/2/1/IV%20Set" className='text-lg font-semibold hover:text-blue-400 transition-all'>IV Set</a>
-    <a href="/products/3/1/Hypodermic%20Needels" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Needels </a>
+    <a href="/products/3/1/Hypodermic%20Needels" className='text-lg font-semibold hover:text-blue-400 transition-all'>Hypodermic Needles </a>
     <a href="/products/5/1/IV%20Fluidss" className='text-lg font-semibold hover:text-blue-400 transition-all'>IV Fluids</a>
     <a href="/products/6/1/Cannula" className='text-lg font-semibold hover:text-blue-400 transition-all'>Cannula</a>
     <a href="/products/4/1/Drip%20Set" className='text-lg font-semibold hover:text-blue-400 transition-all'>Drip Set</a>
@@ -89,19 +91,8 @@ export default function Footer1() {
 </div>
 
                     </div>
-                    <div className='flex flex-col max-lg:pt-[2rem] gap-3'>
-<h1 className='md:text-xl max-md:text-2xl font-bold pb-[1rem] border-b-[1px] border-gray-400 w-fit'>Support Center</h1>
-<div className='flex flex-col gap-3'>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem  dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem </a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum </a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
-    <a href="#" className='text-lg font-semibold hover:text-blue-400 transition-all'>Lorem ipsum dolor</a>
-
-</div>
-
-                    </div>
+                </div>
+                  
                     
                 
             </div>   

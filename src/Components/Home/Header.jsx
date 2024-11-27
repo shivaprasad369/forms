@@ -74,13 +74,13 @@ console.log(menu)
                 className={`absolute shadow-xl z-30 flex flex-col text-black items-center py-[2rem] text-sm rounded-b-xl uppercase tracking-wider gap-3 top-[3.3rem] w-[250%] bg-white`}
               >
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
-                  <a href="/products/1/1/Hypodermic Syringse">Hypodermic Syrings</a>
+                  <a href="/products/1/1/Hypodermic Syringse">Hypodermic Syringes</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/2/1/IV Set">IV Set</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
-                  <a href="/products/3/1/Hypodermic Needels">Hypodermic Needels</a>
+                  <a href="/products/3/1/Hypodermic Needels">Hypodermic Needles</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/4/1/Drip Set">Drip Set</a>
@@ -90,6 +90,9 @@ console.log(menu)
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/6/1/Cannula">Cannula</a>
+                </h2>
+                <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
+                  <a href="/products">View All</a>
                 </h2>
               </motion.div>
             </div>
@@ -137,13 +140,13 @@ console.log(menu)
                 className={`${!menu  && 'hidden'} text-[16px] duration-1000 py-[1rem] pl-[2rem] flex flex-col gap-4`}
               >
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
-                  <a href="/products/1/1/Hypodermic Syringse">Hypodermic Syrings</a>
+                  <a href="/products/1/1/Hypodermic Syringse">Hypodermic Syringes</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/2/1/IV Set">IV Set</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
-                  <a href="/products/3/1/Hypodermic Needels">Hypodermic Needels</a>
+                  <a href="/products/3/1/Hypodermic Needels">Hypodermic Needles</a>
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/4/1/Drip Set">Drip Set</a>
@@ -153,6 +156,9 @@ console.log(menu)
                 </h2>
                 <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
                   <a href="/products/6/1/Cannula">Cannula</a>
+                </h2>
+                <h2 className='hover:text-blue-400 cursor-pointer transition-all'>
+                  <a href="/products">View All</a>
                 </h2>
               </motion.div>
             </div>

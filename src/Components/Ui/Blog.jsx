@@ -6,6 +6,7 @@ export default function Blog({data,index}) {
    const [card,setCard]= useState(false)
   return (
     <motion.div
+    viewport={{once:true}}
     initial={{opacity:0,scale:0.9,rotate:10}}
     whileInView={{
       opacity:1,
@@ -16,7 +17,7 @@ export default function Blog({data,index}) {
         delay:0.5*index
       }
     }}
-    onMouseEnter={()=>setCard(true)} onMouseLeave={()=>setCard(false)} className='w-[100%] flex flex-col gap-3'>
+    onMouseEnter={()=>setCard(true)} onMouseLeave={()=>setCard(false)} className='w-[100%]  flex flex-col gap-3'>
     <div className='w-[100%]  overflow-hidden relative'>
         <div className={`${card && 'bg-[#1dbce454]'} w-[100%] h-[100%] absolute top-0 transition-all duration-500`}/>
         <img src={require('../../Assets/blog-8.webp')} alt="blog" className="w-[100%]" />
@@ -40,14 +41,17 @@ export default function Blog({data,index}) {
             </h1>
             </div>
         </div>
-        <h1 className='text-xl uppercase  text-[#3fb4e2] font-bold'>
+        <h1 className='text-xl inline-flex uppercase  text-[#3fb4e2] font-bold'>
        {data.name}
         </h1>
         <p className='mt-5 leading-[1.8rem]'>
        {data.content.slice(0,100)+ '...'}
 
         </p>
-        <div className='w-fit mt-2 hover:bg-blue-500 transition-all duration-300 bg-[#3fb4e2] px-8 py-4 rounded-md text-white font-semibold'>
+        <div className='w-fit mt-2  h-[2rem] bottom-0 left-[1rem]'>
+         
+        </div>
+        <div className='w-fit mt-2 absolute bottom-3 left-[1rem] hover:bg-blue-500 transition-all duration-300 bg-[#3fb4e2] px-8 py-4 rounded-md text-white font-semibold'>
           <a href={'/blog/'+data.id}>
             Read More
           </a>

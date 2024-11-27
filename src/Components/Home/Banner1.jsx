@@ -76,7 +76,9 @@ const Banner1 = () => {
                  
                   
                   <div className="border-[1px] mt-10 text-sm  border-white px-4 py-2 hover:bg-blue-400 duration-300 hover:border-blue-400 w-fit hover:text-white">
-                        Learen More
+                      <a href="/about">
+                        Learn More
+                      </a>
                   </div>
                 </motion.div>
               )}

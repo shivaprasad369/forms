@@ -124,21 +124,12 @@ export default function Content() {
             </div>
           </div>
           <div className="md:w-[75%] flex flex-col gap-5">
-            {/* <div className="w-[100%] px-3 py-4  bg-gray-300 rounded-md text-gray-100 font-bold ">
+            <div className="w-[100%] px-3 py-4  bg-gray-300 rounded-md text-gray-100 font-bold ">
                 <div className="w-[100%] flex justify-between ">
-                    <div className="border-[1px] items-center bg-[#60C9F2] rounded-xl w-fit  px-5 p-2">
-                        <select name="sort" id="" className="bg-transparent w-[100%] outline-none">
-                            <option value="" className="text-black font-bold">Sorted By</option>
-                            {
-                                ["Lowest Price", "Highest Price", "Newest Arrival"].map((item, index) => (
-                                    <option key={index} value={item} className=" font-bold text-black">
-                                        {item}
-                                    </option>
-                                ))
-                            }
-                        </select>
+                    <div className=" items-centerrounded-xl w-fit  px-5 p-2">
+                       <h1 className="text-2xl font-bold uppercase text-blue-500">Our Products</h1>
                         </div>
-                        <div className="flex items-center gap-2 ">
+                        {/* <div className="flex items-center gap-2 ">
                           <div onClick={()=>setGrids(true)}className={`w-[2.5rem] h-[2.5rem]  rounded-full ${!grids?'bg-white text-black':'bg-[#166c72] text-white'} flex items-center justify-center`}>
                           <BsFillGridFill />
                           </div>
@@ -146,10 +137,10 @@ export default function Content() {
                           <IoIosList />
                           </div>
 
-                    </div>
+                    </div> */}
                 </div>
 
-            </div> */}
+            </div>
             <div className="w-[100%] mt-3 grid grid-cols-3 gap-3">
           
             </div>
