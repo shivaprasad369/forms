@@ -18,9 +18,9 @@ export default function Blog({data,index}) {
       }
     }}
     onMouseEnter={()=>setCard(true)} onMouseLeave={()=>setCard(false)} className='w-[100%]  flex flex-col gap-3'>
-    <div className='w-[100%]  overflow-hidden relative'>
+    <div className='w-[100%] h-[20rem]  overflow-hidden flex items-center justify-center relative'>
         <div className={`${card && 'bg-[#1dbce454]'} w-[100%] h-[100%] absolute top-0 transition-all duration-500`}/>
-        <img src={require('../../Assets/blog-8.webp')} alt="blog" className="w-[100%]" />
+        <img src={data.image} alt="blog" className="w-[100%] h-[100%] object-cover" />
     </div>
     <div className='w-[100%] flex flex-col gap-3 p-[1rem]'>
 

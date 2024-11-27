@@ -1,7 +1,7 @@
 const data=[
     {
         "id": 1,
-        image:'',
+        image:require('../../Assets/blog1.jpeg'),
         name:'How Safe Are Disposable Syringes for Everyday Medical Use',
         author:'By Admin',
         date:'November 01 , 2024' ,
@@ -37,9 +37,10 @@ const data=[
     },
     {
         "id": 2,
-        image:'',
+        image:require('../../Assets/blog2.jpeg'),
         name:'The Role of Syringes in Modern Vaccination Programs',
         author:'By Admin',
+
         date:'November 15, 2024 ',
         tag:'Vaccination, Healthcare Tools',
         p:[
@@ -74,7 +75,7 @@ const data=[
     },
     {
         "id": 3,
-        image:'',
+        image:require('../../Assets/blog2.jpeg'),
         name:'Why Syringe Quality Matters in Critical Care',
         author:'By Admin',
         date:'November 27, 2024  ',
