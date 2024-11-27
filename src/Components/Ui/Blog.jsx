@@ -7,11 +7,11 @@ export default function Blog({data,index}) {
   return (
     <motion.div
     viewport={{once:true}}
-    initial={{opacity:0,scale:0.9,rotate:10}}
+    initial={{opacity:0,scale:0.8}}
     whileInView={{
       opacity:1,
       scale:1,
-      rotate:0,
+      
       transition:{
         duration:1,
         delay:0.5*index
