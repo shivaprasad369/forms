@@ -24,7 +24,7 @@ export default function Details() {
                 <img src={require('../../Assets/blog-8.webp')} className='w-[100%] rounded-2xl' alt="" />
             </div>
             <div className='mt-5 flex flex-col gap-3'>
-                <h1 className="text-4xl tracking-wider font-bold text-blue-400">
+                <h1 className="text-3xl uppercase tracking-wider font-bold text-blue-400">
                 {datas?.name}
                 </h1>
                 <div className='flex flex-wrap w-[100%] gap-6 items-center '>
@@ -38,7 +38,7 @@ export default function Details() {
             {datas?.date}
             </h1>
             </div>
-            <div className='flex items-center gap-2 text-lg'>
+            <div className='flex font-bold items-center gap-2 text-lg'>
             <FaTag  className='text-blue-400' /> <h1>
            {datas.tag}
             </h1>

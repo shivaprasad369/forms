@@ -44,7 +44,7 @@ export default function Blog({data,index}) {
        {data.name}
         </h1>
         <p className='mt-5 leading-[1.8rem]'>
-       {data.content.slice(0,200)+ '...'}
+       {data.content.slice(0,100)+ '...'}
 
         </p>
         <div className='w-fit mt-2 hover:bg-blue-500 transition-all duration-300 bg-[#3fb4e2] px-8 py-4 rounded-md text-white font-semibold'>
