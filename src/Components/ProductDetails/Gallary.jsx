@@ -28,7 +28,7 @@ console.log(product)
   },[])
   return (
     <Container>
-       <div className='w-[100%] lg:px-[10%] max-lg:px-[3%] mt-[2rem] gap-10 justify-center items-center'> 
+       <div className='w-[100%] max-lg:pb-[2rem] lg:px-[10%] max-lg:px-[3%] mt-[2rem] gap-10 justify-center items-center'> 
      {loading &&  
      <div className='lg:flex max-lf:flex-col gap-20 w-[100%]'>
         <div className='lg:w-[40%] h-[35rem]'>
@@ -65,7 +65,7 @@ console.log(product)
        
       </Swiper>
         </div>
-        <div className='w-[50%] flex flex-col gap-8'>
+        <div className='lg:w-[50%] flex flex-col gap-8'>
             <h1 className='text-4xl capitalize font-bold text-[#3fb4e2]'>{product?.name}</h1>
             <div className='flex items-center gap-2 text-lg text-[#fada24]'>
             <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
@@ -118,7 +118,7 @@ console.log(product)
         </div>
        </div>}
 
-    <div className='w-[100%] flex flex-col'>
+    <div className='w-[100%] max-lg:mt-[2rem] flex flex-col'>
         <div className='flex w-[100%] gap-2 items-center'>
                 <div onClick={()=>setDetail(()=>({desc:true,shipping:false}))} className={` ${ detail.desc ?'bg-blue-500' :'bg-[#3fb4e2]'} transition-all duration-500 cursor-pointer rounded-t-md font-bold px-5 py-3 text-sm text-white `}>
                     <h1>Description</h1>
