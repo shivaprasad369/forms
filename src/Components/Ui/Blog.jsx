@@ -34,13 +34,13 @@ export default function Blog({data,index}) {
             {data?.date} |
             </h1>
             </div>
-            <div className='flex items-center gap-2 text-lg'>
+            <div className='flex items-center font-bold gap-2 text-lg'>
             <FaTag  className='text-[#3fb4e2]' /> <h1>
            {data.tag}
             </h1>
             </div>
         </div>
-        <h1 className='text-2xl text-[#3fb4e2] font-bold'>
+        <h1 className='text-xl uppercase  text-[#3fb4e2] font-bold'>
        {data.name}
         </h1>
         <p className='mt-5 leading-[1.8rem]'>
