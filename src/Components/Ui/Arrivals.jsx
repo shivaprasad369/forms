@@ -50,19 +50,19 @@ export default function Arrival({data,index}) {
           <h1
             className={`${
               !card && "text-black"
-            } text-md transition-all duration-500 font-semibold `}
+            } text-md transition-all uppercase duration-500 font-semibold `}
           >
            {data.name}
           </h1>
           <p className="text-gray-400 text-sm">{data.desc}</p>
           {/* <h1 className="text-xl mt-2 font-bold ">{data.price}</h1> */}
-          <div className="flex w-[100%] mt-5 text-[#eaf825] items-center justify-center gap-2">
+          {/* <div className="flex w-[100%] mt-5 text-[#eaf825] items-center justify-center gap-2">
             <FaStar />
             <FaStar />
             <FaStar />
             <FaStar />
             <FaStar />
-          </div>
+          </div> */}
         </div>
       </div>
     </motion.div>

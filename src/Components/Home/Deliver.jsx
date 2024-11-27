@@ -121,7 +121,7 @@ const CustomSwiper = () => {
                             }}
                             className="w-[100%] h-[100%] absolute top-0 right-0 left-0 bg-blue-400"
                           />
-                          <h1 className="md:text-xl max-md:text-md z-20 font-bold uppercase max-md:px-[0.5rem]">
+                          <h1 className={`${!card1 && 'text-blue-400'} md:text-xl  max-md:text-md z-20 font-bold uppercase max-md:px-[0.5rem]`}>
                             Hypodermic Syringes
                           </h1>
                           <span className="tracking-wider max-md:px-[0.5rem] z-20 text-sm h-fit md:leading-[1.7rem]">
@@ -146,7 +146,7 @@ const CustomSwiper = () => {
                             },
                           }}
                           src={
-                            "https://www.narang.com/medical-disposables/hypodermic-products-orange/images/ds5030.jpg"
+                            "https://joyamedicalsupplies.com.au/wp-content/uploads/2024/06/Nipro-Needle-Hypodermic.jpg"
                           }
                           className=" w-[80%] h-[100%] object-cover"
                           alt=""
@@ -163,7 +163,9 @@ const CustomSwiper = () => {
                           }}
                           className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400"
                         />
-                        <h1 className="md:text-xl max-md:text-md max-md:px-[0.5rem] uppercase z-20 font-bold">
+                        <h1 className={`md:text-xl  max-md:text-md max-md:px-[0.5rem] uppercase z-20 font-bold
+                          ${!card2 && 'text-blue-400'}
+                          `}>
                           Hypodermic Needles
                         </h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit max-md:text-sm max-md:px-[0.5rem] md:leading-[1.7rem]">
@@ -206,7 +208,7 @@ const CustomSwiper = () => {
                         }}
                         className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400"
                       />
-                      <h1 className="md:text-xl max-md:text-sm z-20 uppercase font-bold">
+                       <h1 className={`${!card3 && 'text-blue-400'} text-xl z-20 uppercase  font-bold`}>
                         IV Set
                       </h1>
                       <span className="tracking-wider z-20  max-md:text-sm md:text-[0.95rem] h-fit leading-[1.7rem]">
@@ -257,7 +259,7 @@ const CustomSwiper = () => {
                           }}
                           className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400"
                         />
-                        <h1 className="text-xl z-20 uppercase font-bold">
+                      <h1 className={`${!card4 && 'text-blue-400'} text-xl z-20 uppercase  font-bold`}>
                           Drip Set
                         </h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.7rem]">
@@ -300,7 +302,7 @@ const CustomSwiper = () => {
                           }}
                           className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400"
                         />
-                        <h1 className="text-xl z-20 uppercase font-bold">
+                        <h1 className={`${!card5 && 'text-blue-400'} text-xl z-20 uppercase  font-bold`}>
                           IV Fluids
                         </h1>
                         <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.7rem]">
@@ -342,7 +344,7 @@ const CustomSwiper = () => {
                         }}
                         className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400"
                       />
-                      <h1 className="text-xl z-20 uppercase font-bold">
+                      <h1 className={`${!card6 && 'text-blue-400'} text-xl z-20 uppercase  font-bold`}>
                         Cannula
                       </h1>
                       <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.7rem]">

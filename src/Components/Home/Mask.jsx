@@ -88,7 +88,7 @@ export default function Mask() {
                 }}
                 className="flex flex-col gap-3 w-[100%] items-center justify-center">
                     <img src={require('../../Assets/icon-3.webp')} className="w-[8rem]" alt="" />
-                    <h1 className="text-xl font-bold uppercase text-blue-500 text-center">Versitility</h1>
+                    <h1 className="text-xl font-bold uppercase text-blue-500 text-center">Versitality</h1>
                     <p className="text-center w-[80%]">Perfect for diverse medical needs in hospitals, clinics, and emergency settings.
 </p>
                 </motion.div>

@@ -6,8 +6,8 @@ const Productdata=[
         id:1,
         type:'device',
         typeId:1,
-        category:'Hypodermic Syringse',
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        category:'Hypodermic Syringes',
+        desc:' A medical instrument used to inject or withdraw fluids with precision and safety.  ',
         image:'https://www.nubeno.in/wp-content/uploads/2024/10/Syringe-Luer-Lock.jpeg',
         images:[
             {
@@ -141,7 +141,7 @@ const Productdata=[
         id:2,
         type:'device',
         typeId:1,
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        desc:'A reliable device for delivering fluids, medications, or nutrients directly into the bloodstream.  ',
         category:'1.5ML Syringe',
         image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnItwTN5Np4w0aPx62SZUM-2dRlqbubTTveA&s',
         name:'IV Set',
@@ -274,7 +274,7 @@ const Productdata=[
     {
         id:3,
         type:'device',
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        desc:'A thin, hollow tube designed for accurate fluid injection or sample collection.',
         typeId:1,
         category:'1.5ML Syringe',
         image:'https://www.kindly-group.com/uploads/IMG_8296.jpg',
@@ -409,7 +409,7 @@ const Productdata=[
         id:4,
         type:'device',
         typeId:1,
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        desc:'A medical tool designed for controlled and continuous fluid delivery with utmost precision.',
         category:'Ear Thermometer',
         image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVilIu7e-uWHYUD4BpJn0G_VEhBKTNAB823w&s',
         name:'Drip Set',
@@ -542,7 +542,7 @@ const Productdata=[
     {
         id:5,
         type:'device',
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        desc:'Sterile liquids infused intravenously for hydration, nutrition, or medication delivery.  ',
         typeId:1,
         category:'Ear Thermometer',
         image:'https://www.freep.com/gcdn/authoring/2014/09/20/NOKL/ghnewsok-OK-5344014-443fc46e.jpeg?width=1733&height=1726&fit=crop&format=pjpg&auto=webp',
@@ -676,7 +676,7 @@ const Productdata=[
     {
         id:6,
         type:'device',
-        desc:' The 1.5ml syringe is favored by many professional due to the clear easy to read marking for liquid withdrawal & injection.',
+        desc:'Flexible medical tube for administering fluids, medications, or collecting samples efficiently.',
         typeId:1,
         category:'Ear Thermometer',
         image:'https://www.polymedicure.com/wp-content/uploads/2019/05/polyflex.jpg',

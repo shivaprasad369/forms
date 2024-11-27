@@ -9,6 +9,9 @@ export default function Certificate({id}) {
             
      
       <motion.div 
+         viewport={{
+          once:true
+        }}
       initial={{
         opacity:0,
         x:-100,
@@ -41,7 +44,7 @@ export default function Certificate({id}) {
                     
                 ISO 13485:2016 - Medical Devices Quality Management System
                 </h1>
-                <p className='text-[#5a5a5a] leading-[1.7rem]'>
+                <p className='text-[#5a5a5a] text-justify leading-[1.7rem]'>
                This certification ensures that our quality management system is in compliance with the specific requirements for medical device manufacturing. It covers all aspects of production, from design and development to production and post-market surveillance, ensuring our products meet regulatory and customer requirements.
                 </p>
             </div>

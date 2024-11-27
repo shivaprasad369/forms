@@ -8,6 +8,9 @@ export default function Equipment({id}) {
   return (
     <Container>
       <motion.div
+      viewport={{
+        once:true
+      }}
       initial={{
         opacity:0,
         x:100,
@@ -49,7 +52,7 @@ export default function Equipment({id}) {
           <h1 className="text-2xl justify-end flex font-bold">   
           CE Certification (Conformité Européenne)
           </h1>
-          <p className="text-[#5a5a5a] flex lg:justify-end lg:text-right leading-[1.7rem]">
+          <p className="text-[#5a5a5a] lg:text-justify text-left flex lg:justify-end  leading-[1.7rem]">
           The CE mark indicates that our medical devices conform to European Union health, safety, and environmental protection standards. This certification allows us to sell our products within the European Economic Area (EEA), ensuring they meet stringent safety and performance requirements.
           </p>
         </div>
