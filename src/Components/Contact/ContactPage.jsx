@@ -5,8 +5,8 @@ import { MdEmail } from "react-icons/md";
 export default function ContactPage() {
   return (
     <Container>
-      <div className='w-[100%] flex  px-[5%] gap-10'>
-        <div className="w-[30%] flex flex-col gap-10">
+      <div className='w-[100%] lg:flex max-lg:flex max-lg:flex-col  px-[5%] gap-10'>
+        <div className="lg:w-[30%] flex flex-col gap-10">
             <div className='w-[100%] p-[2rem] rounded-xl border-[1px] border-gray-200 hover:border-blue-300 transition-all duration-500'>
                 <div className='w-[100%] flex items-center gap-5'>
                     <div className="w-[3rem] h-[3rem] rounded-md bg-[#3fb4e2] flex items-center justify-center text-white text-2xl">
@@ -73,7 +73,7 @@ Baltimore, MD, USA 4508
                 </div>
             </div>
         </div>
-        <div className='w-[70%] flex flex-col gap-5'>
+        <div className='lg:w-[70%] flex flex-col gap-5'>
             <h1 className='text-3xl capitalize font-bold text-[#3fb4e2]'>Contact form</h1>
             <form className='w-[100%] flex flex-col gap-8'>
                 <input type="text" placeholder='"Name' name='name'

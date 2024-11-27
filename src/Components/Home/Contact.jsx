@@ -23,7 +23,7 @@ export default function Contact() {
           {" "}
           ALWAYS ON YOUR SIDE WHEN YOU NEED HELP
         </span>
-        <div className="w-[100%] items-center md:flex max-md:flex max-md:flex-col justify-center  mt-10 gap-10">
+        <div className="w-[100%] items-center lg:flex max-lg:flex max-lg:flex-col justify-center  mt-10 gap-10">
           <motion.div
           animate={{
             scale:0.8,
@@ -39,7 +39,7 @@ export default function Contact() {
 
               }}
        
-          className="border-[1px] relative md:flex max-md:flex max-md:flex-col gap-5 md:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
+          className="border-[1px] relative lg:flex max-lg:flex max-lg:flex-col gap-5 max-lg:w-[100%] lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
             <div className="bg-[#3fb4e2] px-5 py-3  text-md rounded-md h-fit tracking-wider right-[10%] absolute bottom-[-1.5rem] text-white font-bold">
                 <h1>
                   <a href="/contact">
@@ -74,7 +74,7 @@ export default function Contact() {
                }
 
               }}
-          className="border-[1px] relative md:flex gap-5 max-md:flex max-md:flex-col md:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
+          className="border-[1px] relative md:flex gap-5 max-lg:flex max-lg:flex-col lg:w-[50%] rounded-xl transition-all duration-500 hover:border-[#8cc3e7] p-[3rem]">
             <div className="bg-[#3fb4e2] px-5 py-3  text-md rounded-md h-fit tracking-wider left-[23%] absolute bottom-[-1.5rem] text-white font-bold">
                 <h1>Contact {'>'}</h1>
             </div>
