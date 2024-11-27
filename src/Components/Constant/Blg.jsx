@@ -75,7 +75,7 @@ const data=[
     },
     {
         "id": 3,
-        image:require('../../Assets/blog2.jpeg'),
+        image:'https://bioactiva.com/media/catalog/product/cache/99c99748f913a5146fbcb47152fb9178/s/c/screenshot_2021-09-10_113614.png',
         name:'Why Syringe Quality Matters in Critical Care',
         author:'By Admin',
         date:'November 27, 2024  ',
