@@ -5,11 +5,11 @@ export default function We() {
   return (
     <Container>
       <div className='w-[100%] h-[100%] bg-black text-white flex flex-col gap-4 items-center justify-center py-[5rem]'>
-      <h1 className='text-5xl text-[#3fb4e2] text-center font-bold'>
+      <h1 className='md:text-5xl max-md:text-3xl text-[#3fb4e2] text-center font-bold'>
       What We Do
         </h1>
-        <p className='text-lg tracking-[0.3em]'>MANUFACTURER & SUPPLY MEDICAL EQUIPMENT'S</p>
-        <div className='mt-10 px-[5%] w-[1005] grid grid-cols-3 gap-10  items-center'>
+        <p className='text-lg text-center tracking-[0.3em]'>MANUFACTURER & SUPPLY MEDICAL EQUIPMENT'S</p>
+        <div className='mt-10 px-[5%] w-[1005] grid max-lg:grid-cols-1 lg:grid-cols-3 gap-10  items-center'>
             <div className='w-[100%] flex flex-col gap-5'>
                 <h1 className='text-2xl font-bold text-[#3fb4e2] tracking-wide'>What do we stand for?</h1>
                 <p className='leading-[1.7rem] tracking-wider'>

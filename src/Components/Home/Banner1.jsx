@@ -55,7 +55,7 @@ const Banner1 = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -50 }}
                   transition={{ duration: 0.8 }}
-                  className="absolute overflow-hidden left-[5%] w-[50%] z-10 text-left text-white p-8  bg-opacity-50 rounded-lg shadow-lg"
+                  className="absolute overflow-hidden left-[5%] lg:w-[50%] z-10 text-left text-white p-8  bg-opacity-50 rounded-lg shadow-lg"
                 >
                    <motion.p
                     className="mt-4 overflow-hidden text-xl"
@@ -86,7 +86,7 @@ const Banner1 = () => {
       </Swiper>
 
       {/* Custom Pagination */}
-      <div className="absolute z-30 w-[50rem] h-[8rem] rounded-tr-[10.41667vw] bg-white left-0 bottom-[-2rem] transform -translate-x-1/2 flex gap-4"/>
+      <div className="absolute z-30 max-md:w-[50%] md:w-[50rem] max-md:h-[4rem] md:h-[8rem] rounded-tr-[10.41667vw] bg-white left-0 bottom-[-2rem] transform -translate-x-1/2 flex gap-4"/>
       <div className="absolute z-30 bottom-8 left-1/2 transform -translate-x-1/2 flex gap-4">
         {slides.map((_, index) => (
           <div

@@ -21,7 +21,7 @@ const About = () => {
    
       className="w-[100vw] flex items-center my-[3rem] justify-between relative overflow-hidden "
     >
-      <motion.div className="absolute h-[25rem] overflow-hidden -z-10 w-[68%] top-[2rem] right-[2rem] ">
+      <motion.div className="absolute h-[25rem] overflow-hidden -z-10 w-[68%] lg:top-[2rem] max-lg:top-[38%] right-[2rem] ">
         <img src={shape} className="w-[100%]" alt="" />
         <motion.div
           initial={{
@@ -59,10 +59,10 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
 </p>
        </div>
       </div> */}
-      <div className="w-[100%] max-w-[1400px] px-[10%] pt-[8rem] py-[7rem]">
-        <div className="w-[100%] flex ">
-        <div className="w-[40%] relative mt-[-5rem] flex flex-col gap-3">
-          <div className="absolute right-0 bottom-0">
+      <div className="w-[100%] max-w-[1400px] max-md:px-[5%] md:px-[10%] pt-[8rem] max-md:py-[3rem] md:py-[7rem]">
+        <div className="w-[100%] lg:flex max-lg:flex max-lg:flex-col max-lg:gap-5 ">
+        <div className="lg:w-[40%] relative mt-[-5rem] flex flex-col gap-3">
+          <div className="absolute right-0 max-lg:hidden  bottom-[-2rem]">
             <img src={'https://www.icumed.com/media/gvvpvwko/ivconsumablesbanner_mobile.png?format=webp'} alt="" />
           </div>
             <div className="w-[4rem] bg-blue-400 p-1 " />
@@ -95,7 +95,7 @@ Re volutionizing Laboratory Efficiency: The Impact of Mindray's CAL 6000 and MC-
                 delay:0.6
               },
             }}
-            className="w-[70%] text-sm text-justify">
+            className="md:w-[70%] text-sm text-justify">
 We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming healthcare through the meticulous design and production of world-class medical syringes. As we prepare to launch full-scale manufacturing operations, our focus remains on pioneering high-performance, precision-engineered medical devices that meet the ever-evolving needs of healthcare professionals and institutions.
             </motion.p>
             <motion.div
@@ -119,8 +119,8 @@ We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming
           <div
              onMouseEnter={() => setIsHover(true)}
              onMouseLeave={() => setIsHover(false)}
-          className="w-[70%] relative h-[30rem] ">
-            <div className="absolute bottom-[0] left-0 w-[50%] h-[5rem] rounded-tr-full bg-white z-20" />
+          className="lg:w-[70%] mt-[3rem] relative max-md:h-[20rem] md:h-[30rem] ">
+            <div className="absolute bottom-[-0.2rem] left-[-0.2rem] w-[50%] h-[5rem] rounded-tr-full bg-white z-20" />
             <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -165,7 +165,7 @@ We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming
             <SwiperSlide>
             <motion.div
             
-            className=" w-[100%] overflow-hidden">
+            className=" w-[100%] h-[100%] overflow-hidden">
 
             <motion.img
             initial={{
@@ -187,7 +187,7 @@ We, at Rakshaum Medical Devices Private Limited, are on the edge of transforming
               },
             }}
               src={'https://media.post.rvohealth.io/wp-content/uploads/2019/01/IV_bag-732x549-thumbnail.jpg'}
-              className="w-[100%]"
+              className="w-[100%] h-[100%] object-cover"
               alt=""
             />
             </motion.div>

@@ -8,7 +8,7 @@ export default function Why() {
   return (
     <Container>
       <div className='w-[100%] text-[#3f3f3f] bg3 flex flex-col gap-5 items-center px-[5%] mt-[-4.5rem] py-[5rem] pt-[5rem] '>
-        <h1 className="text-[#3fb4e2] text-4xl font-bold tracking-wider">
+        <h1 className="text-[#3fb4e2] text-4xl text-center font-bold tracking-wider">
        
         {'See Why Customers Love Our Products'.split('').map((data,index)=><motion.span key={index} initial={{opacity:0}}
            whileInView={{opacity:1,transition:{
@@ -20,13 +20,13 @@ export default function Why() {
             {data}
            </motion.span>)}
         </h1>
-        <span className="text-lg tracking-[0.3em]">
+        <span className="text-lg text-center tracking-[0.3em]">
           {" "}
           DESIGNED TO PROTECT
         </span>
         <div className='w-[100%]  flex mt-10 '>
-            <div className='w-[50%]'></div>
-            <div className='w-[50%] flex justify-end flex-col gap-10'>
+            <div className='lg:w-[50%] max-md:hidden'></div>
+            <div className='lg:w-[50%] flex justify-end flex-col gap-10'>
                 <Faq name='What types of syringes does Rakshaum Medical Devices manufacture?'
                 p={'We manufacture a wide range of medical syringes, including hypodermic syringes, insulin syringes, and auto-disable syringes. Our products are designed for various medical applications, from general injections to specialized procedures.'}
                 />

@@ -35,8 +35,8 @@ export default function Testimonials() {
               <FaChevronRight className="text-[1.5rem] custom-next text-black" />
             </motion.div>
           </div>
-          <div className="w-[100%] flex gap-10">
-            <div className="w-[30%] flex flex-col gap-5">
+          <div className="w-[100%] lg:flex max-lg:flex max-lg:flex-col gap-10">
+            <div className="lg:w-[30%] flex flex-col gap-5">
               <h1 className="text-4xl uppercase font-bold">Happy Client</h1>
               <p>
               At Rakshaum Medical Devices, we take great pride in the satisfaction of our clients. Over the years, we have built strong, lasting relationships with healthcare professionals, hospitals, clinics, and medical distributors around the world.
@@ -88,7 +88,7 @@ export default function Testimonials() {
                 </div>
               </div>
             </div>
-            <div className="w-[60%] ">
+            <div className="lg:w-[60%] ">
               <Swiper
                 autoplay={{
                   delay: 2500,
@@ -100,7 +100,7 @@ export default function Testimonials() {
                 }}
                 loop={true}
                 modules={[Navigation, Autoplay]}
-                className="w-[90%] flex overflow-hidden"
+                className="lg:w-[90%] flex overflow-hidden"
               >
                 <SwiperSlide>
                   <div className="w-[100%] flex flex-col gap-5  ">
@@ -116,7 +116,7 @@ export default function Testimonials() {
                       <img src={require('../../Assets/google-removebg-preview.png')} alt="" />
                     </div>
                     </div>
-                    <h1 className="leading-[1.8rem]  tracking-wider text-xl font-semibold">
+                    <h1 className="leading-[1.8rem]  tracking-wider md:text-xl font-semibold">
                     Rakshaum Medical Devices has been a reliable partner in our hospital. The syringes and IV equipment we use from them consistently meet the highest standards of quality and safety. Their attention to detail and commitment to excellence make them our preferred supplier for all medical equipment needs.
                     </h1>
                   <div className="mt-5 flex flex-col gap-2">
@@ -146,7 +146,7 @@ export default function Testimonials() {
                       <img src={require('../../Assets/google-removebg-preview.png')} alt="" />
                     </div>
                     </div>
-                    <h1 className="leading-[1.8rem]  tracking-wider text-xl font-semibold">
+                    <h1 className="leading-[1.8rem]  tracking-wider md:text-xl font-semibold">
                     We’ve been sourcing medical devices from Rakshaum for over a year now, and the quality of their products has never disappointed us. Their syringes are incredibly precise, and we appreciate their commitment to timely deliveries. A trusted name in medical equipment!
                     </h1>
                   <div className="mt-5 flex flex-col gap-2">

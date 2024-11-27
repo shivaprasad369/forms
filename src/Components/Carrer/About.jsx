@@ -10,16 +10,16 @@ export default function About() {
 
   return (
     <Container>
-      <div className="w-[100%] pb-[4rem] flex flex-col text-[#252525] gap-7 items-center justify-center">
+      <div className="w-[100%] pb-[4rem] flex flex-col max-lg:px-[3%] text-[#252525] gap-7 items-center justify-center">
         <h1 className="text-3xl  font-semibold tracking-wider text-[#3fb4e2]">
           <h1>Working@Reakshaum</h1>
         </h1>
-        <p className="text-6xl font-semibold text-[#252525] text-center">
-          Your time to shape the <br />
+        <p className="md:text-6xl max-md:text-4xl font-semibold text-[#252525] text-center">
+          Your time to shape the <br className="max-lg:hidden"/>
           future work
         </p>
 
-        <p className="w-[55%] text-xl tracking-wider leading-[1.7rem] text-center">
+        <p className="lg:w-[55%] text-xl tracking-wider leading-[1.7rem] text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, libero
           autem modi reiciendis a nemo sed, labore perferendis quibusdam cumque
           eum magni, asperiores quo saepe molestias temporibus vel culpa
@@ -27,7 +27,7 @@ export default function About() {
         </p>
 
         <div className="w-[100%] items-center justify-center flex flex-col gap-10 mt-10">
-          <div className="w-[70%] p-[2rem] flex flex-col items-center justify-center gap-5 rounded-xl border-[1px] border-gray-300">
+          <div className="md:w-[70%] p-[2rem] flex flex-col items-center justify-center gap-5 rounded-xl border-[1px] border-gray-300">
             <h1 className="text-3xl font-bold uppercase text-[#3fb4e2]">
               Submit Your Resume
             </h1>

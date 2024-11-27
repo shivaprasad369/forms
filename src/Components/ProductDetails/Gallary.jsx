@@ -75,9 +75,9 @@ console.log(product)
                     product?.short
                 }
             </p>
-            <span className='text-4xl font-semibold text-[#3fb4e2]'>
+            {/* <span className='text-4xl font-semibold text-[#3fb4e2]'>
                 {product?.price}
-            </span>
+            </span> */}
            <div className='flex gap-10 items-center'>
             <h1 className='w-[20%] text-[#3fb4e2] font-bold  text-2xl'>
               Color 

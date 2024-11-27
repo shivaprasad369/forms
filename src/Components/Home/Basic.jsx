@@ -5,7 +5,7 @@ export default function Basic() {
   return (
     <Container>
       <div className="bg1">
-        <div className="w-[100%] flex relative z-99 flex-col gap-5 pb-[10rem] pt-[10rem] mt-[-4.5rem]  items-center justify-center">
+        <div className="w-[100%] flex relative z-99 flex-col gap-5 pb-[10rem] max-md:pt-[17rem] md:pt-[10rem] mt-[-4.5rem]  items-center justify-center">
           <motion.div 
           initial={{
             opacity: 0,
@@ -23,7 +23,7 @@ export default function Basic() {
             },
 
           }}
-          style={{zIndex:90}} className="bg-[#3fb4e2] z-99 p-[3rem] mr-[20%] flex flex-col gap-4 w-[40%] rounded-xl">
+          style={{zIndex:90}} className="bg-[#3fb4e2] z-99 md:p-[3rem] max-md:p-[1rem]  mr-[20%] flex flex-col gap-4 md:w-[40%] rounded-xl">
             <h1 className="text-4xl font-semibold tracking-wider  text-white">
               Your time to join us
             </h1>
@@ -55,7 +55,7 @@ export default function Basic() {
             },
 
           }}
-          className=" absolute right-[15%] z-10 h-[30rem] w-[25rem] rounded-sm overflow-hidden">
+          className=" absolute md:right-[15%] top-[3rem] z-10 md:h-[30rem] max-md:w-[80%]  md:w-[25rem] rounded-sm overflow-hidden">
             <img src={require('../../Assets/vision-values-career-11.jpeg')} alt="" className="w-[100%] h-[100%] object-cover" />
           </motion.div>
         </div>

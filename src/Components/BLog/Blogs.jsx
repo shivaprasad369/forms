@@ -9,7 +9,7 @@ export default function Blogs() {
     <Container>
       <div className='w-[100%] px-[3%] pb-[4rem] items-center justify-center'>
         <div className='w-[100%] flex gap-10'>
-            <div className='w-[30%] flex flex-col gap-5'>
+            <div className='w-[30%] max-lg:hidden flex flex-col gap-5'>
                 <div className='px-5 py-3 text-black bg-gray-300 border-[3px] border-l-blue-400'>
                     <h1 className='text-xl font-bold'>Categories</h1>
                 </div>
@@ -29,7 +29,7 @@ export default function Blogs() {
                     </h1>)}
                 </div>
             </div>
-            <div className='w-[70%] grid grid-cols-2 gap-14'>
+            <div className='lg:w-[70%] grid max-lg:grid-cols-1 lg:grid-cols-2 gap-14'>
                  {data?.map((data,index)=>
                  
                  <Blog key={data.id} data={data} />

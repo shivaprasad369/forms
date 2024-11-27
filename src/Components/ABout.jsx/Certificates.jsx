@@ -23,8 +23,8 @@ export default function Certificate({id}) {
         },
       }}
       onMouseEnter={()=>setCard(true)} onMouseLeave={()=>setCard(false)} 
-      className='w-[100%] text-[#3fb4e2] px-[10%] gap-14  flex items-center justify-center '>
-            <div className='w-[20%] flex items-center relative justify-center'>
+      className='w-[100%] text-[#3fb4e2] lg:px-[10%] max-lg:px-[5%] gap-14  lg:flex max-lg:flex max-lg:flex-col items-center justify-center '>
+            <div className='lg:w-[20%] max-lg:w-[80%] flex items-center relative justify-center'>
                 <img src={require('../../Assets/CE-Certificate.jpg')}
                 className='w-[100%] z-10'
                 alt="" />
@@ -33,7 +33,7 @@ export default function Certificate({id}) {
                 alt="" />
                 <div className={`${card && 'bg-[#f5f5f586]' } transition-all duration-500 w-[100%] h-[100%] top-[-5%] -z-0 left-[-5%] absolute`}/>
             </div>
-            <div className='w-[50%] flex flex-col gap-5'>
+            <div className='lg:w-[50%] flex flex-col gap-5'>
                 <h1 className='flex items-center gap-3'>
                 <FaUserDoctor className='text-[3rem]'/>
                 </h1>

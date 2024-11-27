@@ -18,9 +18,9 @@ export default function Details() {
     },[id])
   return (
     <Container>
-      <div className='w-[100%] flex flex-col items-center justify-center gap-10'>
-        {!loading &&<div className='w-[70%] flex flex-col gap-5'>
-            <div className="w-[100%] h-[35rem] rounded-2xl overflow-hidden">
+      <div className='w-[100%] flex flex-col items-center max-lg:px-[5%] justify-center gap-10'>
+        {!loading &&<div className='lg:w-[70%] flex flex-col gap-5'>
+            <div className="w-[100%] lg:h-[35rem] rounded-2xl overflow-hidden">
                 <img src={require('../../Assets/blog-8.webp')} className='w-[100%] rounded-2xl' alt="" />
             </div>
             <div className='mt-5 flex flex-col gap-3'>

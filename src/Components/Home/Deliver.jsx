@@ -40,8 +40,8 @@ const CustomSwiper = () => {
 
   return (
     <div className="w-[100vw] flex items-center justify-center overflow-hidden">
-      <div className="w-[100%] flex gap-5  max-w-[1400px] pl-[5%] ">
-        <div className="w-[20%] gap-5 flex flex-col">
+      <div className="w-[100%] lg:flex max-lg:flex max-lg:flex-col  gap-5  max-w-[1400px] pl-[5%] ">
+        <div className="lg:w-[20%] gap-5 flex flex-col">
           <div  className="w-[4rem] py-2 rounded-full bg-blue-400 "/>
           <h1 className="text-[2.5rem]  font-bold leading-[2.7rem] text-[#252525]">Products</h1>
           <p className="text-sm text-[#252525] leading-[1.7rem] tracking-wide">
@@ -51,11 +51,28 @@ const CustomSwiper = () => {
             Explore More
           </div>
                   </div>
-        <div className="w-[80%] items-center justify-center relative flex overflow-hidden">
+        <div className="md:w-[80%] items-center justify-center relative flex overflow-hidden">
           <Swiper
             ref={swiperRef}
-           
-            slidesPerView={1.2}
+            breakpoints={{
+              360: {
+                slidesPerView: 0.6,
+         
+              },
+              640: {
+                slidesPerView: 0.8,
+         
+              },
+              768: {
+                slidesPerView: 0.8,
+               
+              },
+              1024: {
+                slidesPerView: 1.2,
+               
+              },
+            }}
+           slidesPerView={1.2}
             speed={800}
             onSlideChange={(swiper) => {
               if (swiper.isEnd) setDirection(-1);
@@ -80,10 +97,10 @@ const CustomSwiper = () => {
                           alt=""
                         />
                       </div>
-                      <div className={`${card1?'text-white':'text-black'} duration-500 w-[33%] relative  flex flex-col gap-5  p-[1rem]`}>
-                        <motion.div animate={{width:card1?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-xl z-20 font-bold">Hypodermic Syringes</h1>
-                        <span className="tracking-wider z-20 text-sm h-fit leading-[1.4rem]">
+                      <div className={`${card1?'text-white':'text-black'} duration-500 w-[33%]  relative  flex flex-col gap-5  md:p-[1rem]`}>
+                        <motion.div animate={{width:card1?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 right-0 left-0 bg-blue-400" />
+                        <h1 className="md:text-xl max-md:text-md z-20 font-bold max-md:px-[0.5rem]">Hypodermic Syringes</h1>
+                        <span className="tracking-wider max-md:px-[0.5rem] z-20 text-sm h-fit md:leading-[1.4rem]">
                         A hypodermic syringe is a medical instrument used to inject fluids into the body or withdraw fluids from the body.  
                         </span>
                       </div>
@@ -103,16 +120,16 @@ const CustomSwiper = () => {
                         />
                       </div>
                       <div className={`${card2?'text-white':'text-black'} 
-                      duration-500 w-[30%] relative  flex flex-col gap-5  p-[1rem]`}>
+                      duration-500 w-[33%] relative  flex flex-col gap-5  md:p-[1rem]`}>
                         <motion.div animate={{width:card2?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-xl z-20 font-bold">Hypodermic Needles</h1>
-                        <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
+                        <h1 className="md:text-xl max-md:text-md max-md:px-[0.5rem] z-20 font-bold">Hypodermic Needles</h1>
+                        <span className="tracking-wider z-20 text-[0.95rem] h-fit max-md:text-sm max-md:px-[0.5rem] md:leading-[1.4rem]">
                         A hypodermic needle is a thin, hollow tube made of stainless steel, designed for use in medical procedures. 
                         </span>
                       </div>
                     </div>
                   </div>
-                  <div  onMouseEnter={()=>setCard3(true)} onMouseLeave={()=>setCard3(false)}  className="w-[35%] gap-10 flex flex-col">
+                  <div  onMouseEnter={()=>setCard3(true)} onMouseLeave={()=>setCard3(false)}  className="md:w-[35%] max-md:w-[40%] gap-10 flex flex-col">
                     <div className=" justify-center overflow-hidden flex items-center w-[100%] h-[15rem]">
                     <motion.img
                         animate={{
@@ -130,8 +147,8 @@ const CustomSwiper = () => {
                     <div className={`${card3?'text-white':'text-black'}
                      duration-500 w-[100%] relative  flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card3?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
-                        <h1 className="text-xl z-20 font-bold">IV Set</h1>
-                        <span className="tracking-wider z-20 text-[0.95rem] h-fit leading-[1.4rem]">
+                        <h1 className="md:text-xl max-md:text-sm z-20 font-bold">IV Set</h1>
+                        <span className="tracking-wider z-20  max-md:text-sm md:text-[0.95rem] h-fit leading-[1.4rem]">
                         An IV set is a medical device used to deliver fluids, medications, or nutrients directly into a patient's bloodstream. 
                         </span>
                       </div>
@@ -144,7 +161,7 @@ const CustomSwiper = () => {
                 <div className="w-[100%] flex">
                   <div className="w-[65%] flex flex-col  ">
                     <div onMouseEnter={()=>setCard4(true)} onMouseLeave={()=>setCard4(false)} className="w-[100%]  flex-row-reverse flex justify-between">
-                      <div className="w-[70%] h-[18rem] overflow-hidden flex items-center justify-center">
+                      <div className="md:w-[70%] max-md:w-[65%] h-[18rem] overflow-hidden flex items-center justify-center">
                         <motion.img
                         animate={{
                           scale: card4? 1.1 : 1,
@@ -158,7 +175,7 @@ const CustomSwiper = () => {
                           alt=""
                         />
                       </div>
-                      <div className={`${card4?'text-white':'text-black'} duration-500 w-[30%]
+                      <div className={`${card4?'text-white':'text-black'} duration-500 max-md:w-[35%] md:w-[30%]
                        relative  flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card4?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
                         <h1 className="text-xl z-20 font-bold">Drip Set</h1>
@@ -168,7 +185,7 @@ const CustomSwiper = () => {
                       </div>
                     </div>
                     <div onMouseEnter={()=>setCard5(true)} onMouseLeave={()=>setCard5(false)}  className="w-[100%] flex  justify-between">
-                      <div className="w-[70%] h-[18rem] justify-center overflow-hidden flex items-center ">
+                      <div className="md:w-[70%] max-md:w-[65%] h-[18rem] justify-center overflow-hidden flex items-center ">
                       <motion.img
                         animate={{
                           scale: card5? 1.1 : 1,
@@ -182,7 +199,7 @@ const CustomSwiper = () => {
                           alt=""
                         />
                       </div>
-                      <div className={`${card5?'text-white':'text-black'} duration-500 w-[30%] relative
+                      <div className={`${card5?'text-white':'text-black'} duration-500 max-md:w-[35%] md:w-[30%] relative
                         flex flex-col gap-5  p-[1rem]`}>
                         <motion.div animate={{width:card5?'100%':0,transition:{duration:0.5}}} className="w-[100%] h-[100%] absolute top-0 left-0 bg-blue-400" />
                         <h1 className="text-xl z-20 font-bold">IV Fluids</h1>

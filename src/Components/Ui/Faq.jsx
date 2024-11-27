@@ -7,7 +7,7 @@ export default function Faq({name,p}) {
     <div className=' w-[100%] flex cursor-pointer flex-col gap-5'>
                     <div onClick={()=>setFaq(()=>!faq)} className='w-[100%]
                     border-b-[1px] border-[#bbbaba] pb-[2rem]
-                    flex text-2xl font-bold tracking-wider justify-between items-center '>
+                    flex md:text-2xl font-bold tracking-wider justify-between items-center '>
                         <h1>{name}</h1>
                         {faq && <FaMinus  className='text-[1.5rem] ' />}
                         {!faq && <FaPlus  className='text-[1.5rem] '/>}

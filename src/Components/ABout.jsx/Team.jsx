@@ -9,7 +9,7 @@ export default function Team() {
         <h1 className='text-4xl font-bold tracking-wider text-center text-[#3fb4e2] '>
           Our Team
         </h1>
-        <div className='w-[100%] grid grid-cols-4 gap-5 px-[3%] py-[3rem]'>
+        <div className='w-[100%] grid lg:grid-cols-4 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5 px-[3%] py-[3rem]'>
             <motion.div 
             initial={{scale:0.9,opacity:0}}
             whileInView={{scale:1,opacity:1,transition:{duration:0.5,delay:0.2}}}

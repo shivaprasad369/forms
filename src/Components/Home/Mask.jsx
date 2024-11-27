@@ -7,7 +7,7 @@ export default function Mask() {
     <Container>
       <div className="w-[100%] h-[100%] pb-[4rem] items-center justify-center">
         <div className="w-[100%] flex flex-col gap-3 items-center justify-center">
-          <h1 className="text-[#3fb4e2] text-4xl  font-bold tracking-wider">
+          <h1 className="text-[#3fb4e2] md:text-4xl  max-md:text-3xl font-bold tracking-wider">
          {'OUR PRIME PRODUCT'.split('').map((data,index)=><motion.span key={index} initial={{opacity:0}}
            whileInView={{opacity:1,transition:{
             delay:index*0.1,
@@ -21,7 +21,7 @@ export default function Mask() {
           <p className="text-[#4C4C4C] text-lg tracking-[0.3em]">
             DURABLE FACE MASKS
           </p>
-          <div className="w-[100%] mt-5 grid grid-cols-3 px-[3rem] items-center justify-center gap-5">
+          <div className="w-[100%] mt-5 grid md:grid-cols-3 max-md:grid-cols-1 px-[3rem] items-center justify-center gap-5">
           <div className="w-[100%] flex flex-col gap-4">
                 <motion.div
                 initial={{
@@ -71,9 +71,9 @@ export default function Mask() {
             }}
               src={require("../../Assets/vecteezy_syringe-medical-drug_24091646.png")}
               alt="Mask 1"
-              className="object-cover"
+              className="object-cover max-md:w-[100%]"
             />
-           <div className="w-[100%] flex flex-col gap-4">
+           <div className="w-[100%] flex flex-col  gap-4">
                 <motion.div
                 initial={{
                   opacity:0,

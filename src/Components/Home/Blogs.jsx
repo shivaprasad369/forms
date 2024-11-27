@@ -12,7 +12,7 @@ export default function Blogs() {
       <div className='w-[100%] pb-[4rem] items-center justify-center'>
         <div className='w-[100%] flex'>
        
-            <div className='w-[100%] grid grid-cols-3 gap-5'>
+            <div className='w-[100%] grid md:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5'>
                  {data?.slice(0,3).map((data,index)=>
                  <div className="bg-white">
 

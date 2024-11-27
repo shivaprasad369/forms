@@ -32,7 +32,7 @@ export default function Content() {
     <Container>
       <div className="w-[100%] bg-slate-100  mt-[-4.4rem] pt-[4.4rem] flex items-center justify-center px-[5%] pb-[4rem]">
         <div className="w-[100%] flex gap-10  ">
-          <div className="w-[25%] flex flex-col gap-5">
+          <div className="w-[25%] max-md:hidden flex flex-col gap-5">
             <div className="w-[100%] flex flex-col gap-5">
               <div className="px-5 py-3 text-black bg-gray-300 border-[3px] border-l-blue-400">
                 <h1 className="text-xl font-bold">Products</h1>
@@ -123,8 +123,8 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div className="w-[75%] flex flex-col gap-5">
-            <div className="w-[100%] px-3 py-4  bg-gray-300 rounded-md text-gray-100 font-bold ">
+          <div className="md:w-[75%] flex flex-col gap-5">
+            {/* <div className="w-[100%] px-3 py-4  bg-gray-300 rounded-md text-gray-100 font-bold ">
                 <div className="w-[100%] flex justify-between ">
                     <div className="border-[1px] items-center bg-[#60C9F2] rounded-xl w-fit  px-5 p-2">
                         <select name="sort" id="" className="bg-transparent w-[100%] outline-none">
@@ -149,11 +149,11 @@ export default function Content() {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
             <div className="w-[100%] mt-3 grid grid-cols-3 gap-3">
           
             </div>
-            <div className={`w-[100%] mt-3 grid grid-cols-3 gap-3`}>
+            <div className={`w-[100%] mt-3 grid max-lg:grid-cols-1 lg:grid-cols-3 gap-3`}>
                 {
                     loading? products.map((product, index) => (
                         <div key={product.id} className="w-[100%] bg-white rounded-md">
